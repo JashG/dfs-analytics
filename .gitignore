@@ -1,0 +1,8 @@
+.idea
+.client
+.DS_Store
+
+server/venv
+server/secrets.py
+
+client/node_modules
