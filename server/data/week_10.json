@@ -1,0 +1,412 @@
+{
+    "week_10": [
+        {
+            "name": "McKrank",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "J. Goff",
+                    "salary": "$6,500",
+                    "owned": "50.0%",
+                    "points": "14.48"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Jones",
+                    "salary": "$7,100",
+                    "owned": "66.7%",
+                    "points": "14.50"
+                },
+                {
+                    "position": "RB",
+                    "name": "D. Swift",
+                    "salary": "$5,100",
+                    "owned": "16.7%",
+                    "points": "25.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "K. Allen",
+                    "salary": "$7,100",
+                    "owned": "66.7%",
+                    "points": "12.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Hopkins",
+                    "salary": "$7,700",
+                    "owned": "16.7%",
+                    "points": "28.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "S. Diggs",
+                    "salary": "$7,500",
+                    "owned": "33.3%",
+                    "points": "25.30"
+                },
+                {
+                    "position": "TE",
+                    "name": "L. Thomas",
+                    "salary": "$3,300",
+                    "owned": "16.7%",
+                    "points": "10.60"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "J. Reynolds",
+                    "salary": "$3,500",
+                    "owned": "33.3%",
+                    "points": "17.40"
+                },
+                {
+                    "position": "DST",
+                    "name": "Rams",
+                    "salary": "$2,200",
+                    "owned": "33.3%",
+                    "points": "13.00"
+                }
+            ]
+        },
+        {
+            "name": "JParrot12",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "J. Allen",
+                    "salary": "$7,500",
+                    "owned": "16.7%",
+                    "points": "29.36"
+                },
+                {
+                    "position": "RB",
+                    "name": "J. McKissic",
+                    "salary": "$4,900",
+                    "owned": "33.3%",
+                    "points": "17.90"
+                },
+                {
+                    "position": "RB",
+                    "name": "M. Sanders",
+                    "salary": "$6,400",
+                    "owned": "16.7%",
+                    "points": "13.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Claypool",
+                    "salary": "$5,800",
+                    "owned": "16.7%",
+                    "points": "21.30"
+                },
+                {
+                    "position": "WR",
+                    "name": "J. Brown\nQ",
+                    "salary": "$5,300",
+                    "owned": "33.3%",
+                    "points": "13.20"
+                },
+                {
+                    "position": "WR",
+                    "name": "S. Diggs",
+                    "salary": "$7,500",
+                    "owned": "33.3%",
+                    "points": "25.30"
+                },
+                {
+                    "position": "TE",
+                    "name": "D. Goedert",
+                    "salary": "$4,200",
+                    "owned": "16.7%",
+                    "points": "7.30"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "T. Fulgham",
+                    "salary": "$6,400",
+                    "owned": "16.7%",
+                    "points": "1.80"
+                },
+                {
+                    "position": "DST",
+                    "name": "Jaguars",
+                    "salary": "$2,000",
+                    "owned": "16.7%",
+                    "points": "11.00"
+                }
+            ]
+        },
+        {
+            "name": "JashG98",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "J. Herbert",
+                    "salary": "$6,600",
+                    "owned": "16.7%",
+                    "points": "21.48"
+                },
+                {
+                    "position": "RB",
+                    "name": "D. Johnson",
+                    "salary": "$5,000",
+                    "owned": "33.3%",
+                    "points": "5.40"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Jones",
+                    "salary": "$7,100",
+                    "owned": "66.7%",
+                    "points": "14.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Johnson",
+                    "salary": "$5,200",
+                    "owned": "16.7%",
+                    "points": "26.60"
+                },
+                {
+                    "position": "WR",
+                    "name": "K. Allen",
+                    "salary": "$7,100",
+                    "owned": "66.7%",
+                    "points": "12.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "T. McLaurin",
+                    "salary": "$6,800",
+                    "owned": "16.7%",
+                    "points": "18.20"
+                },
+                {
+                    "position": "TE",
+                    "name": "E. Engram",
+                    "salary": "$4,500",
+                    "owned": "33.3%",
+                    "points": "3.50"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "J. McKissic",
+                    "salary": "$4,900",
+                    "owned": "33.3%",
+                    "points": "17.90"
+                },
+                {
+                    "position": "DST",
+                    "name": "Giants",
+                    "salary": "$2,700",
+                    "owned": "33.3%",
+                    "points": "4.00"
+                }
+            ]
+        },
+        {
+            "name": "dhdrewhouston",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "T. Tagovailoa",
+                    "salary": "$5,600",
+                    "owned": "16.7%",
+                    "points": "14.66"
+                },
+                {
+                    "position": "RB",
+                    "name": "J. Robinson",
+                    "salary": "$6,600",
+                    "owned": "33.3%",
+                    "points": "16.20"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Gibson",
+                    "salary": "$5,600",
+                    "owned": "33.3%",
+                    "points": "22.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "B. Aiyuk",
+                    "salary": "$5,700",
+                    "owned": "16.7%",
+                    "points": "19.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "J. Brown\nQ",
+                    "salary": "$5,300",
+                    "owned": "33.3%",
+                    "points": "13.20"
+                },
+                {
+                    "position": "WR",
+                    "name": "K. Allen",
+                    "salary": "$7,100",
+                    "owned": "66.7%",
+                    "points": "12.90"
+                },
+                {
+                    "position": "TE",
+                    "name": "E. Engram",
+                    "salary": "$4,500",
+                    "owned": "33.3%",
+                    "points": "3.50"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "C. Kupp",
+                    "salary": "$6,900",
+                    "owned": "33.3%",
+                    "points": "10.00"
+                },
+                {
+                    "position": "DST",
+                    "name": "Giants",
+                    "salary": "$2,700",
+                    "owned": "33.3%",
+                    "points": "4.00"
+                }
+            ]
+        },
+        {
+            "name": "rileyc98",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "J. Goff",
+                    "salary": "$6,500",
+                    "owned": "50.0%",
+                    "points": "14.48"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Jones",
+                    "salary": "$7,100",
+                    "owned": "66.7%",
+                    "points": "14.50"
+                },
+                {
+                    "position": "RB",
+                    "name": "J. Robinson",
+                    "salary": "$6,600",
+                    "owned": "33.3%",
+                    "points": "16.20"
+                },
+                {
+                    "position": "WR",
+                    "name": "R. Woods",
+                    "salary": "$6,600",
+                    "owned": "33.3%",
+                    "points": "8.60"
+                },
+                {
+                    "position": "WR",
+                    "name": "T. Lockett\nQ",
+                    "salary": "$6,500",
+                    "owned": "16.7%",
+                    "points": "11.60"
+                },
+                {
+                    "position": "WR",
+                    "name": "K. Allen",
+                    "salary": "$7,100",
+                    "owned": "66.7%",
+                    "points": "12.90"
+                },
+                {
+                    "position": "TE",
+                    "name": "A. Hooper",
+                    "salary": "$3,900",
+                    "owned": "16.7%",
+                    "points": "2.10"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "J. Reynolds",
+                    "salary": "$3,500",
+                    "owned": "33.3%",
+                    "points": "17.40"
+                },
+                {
+                    "position": "DST",
+                    "name": "Rams",
+                    "salary": "$2,200",
+                    "owned": "33.3%",
+                    "points": "13.00"
+                }
+            ]
+        },
+        {
+            "name": "paynetrain37",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "J. Goff",
+                    "salary": "$6,500",
+                    "owned": "50.0%",
+                    "points": "14.48"
+                },
+                {
+                    "position": "RB",
+                    "name": "D. Johnson",
+                    "salary": "$5,000",
+                    "owned": "33.3%",
+                    "points": "5.40"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Jones",
+                    "salary": "$7,100",
+                    "owned": "66.7%",
+                    "points": "14.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "R. Woods",
+                    "salary": "$6,600",
+                    "owned": "33.3%",
+                    "points": "8.60"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Kupp",
+                    "salary": "$6,900",
+                    "owned": "33.3%",
+                    "points": "10.00"
+                },
+                {
+                    "position": "WR",
+                    "name": "B. Cooks",
+                    "salary": "$5,600",
+                    "owned": "16.7%",
+                    "points": "9.90"
+                },
+                {
+                    "position": "TE",
+                    "name": "J. Graham",
+                    "salary": "$4,100",
+                    "owned": "16.7%",
+                    "points": "0.00"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "A. Gibson",
+                    "salary": "$5,600",
+                    "owned": "33.3%",
+                    "points": "22.50"
+                },
+                {
+                    "position": "DST",
+                    "name": "Broncos",
+                    "salary": "$2,400",
+                    "owned": "16.7%",
+                    "points": "-4.00"
+                }
+            ]
+        }
+    ]
+}

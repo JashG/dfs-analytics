@@ -1,0 +1,412 @@
+{
+    "week_4": [
+        {
+            "name": "JParrot12",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "D. Prescott",
+                    "salary": "$7,200",
+                    "owned": "33.3%",
+                    "points": "42.28"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Jones",
+                    "salary": "$7,500",
+                    "owned": "16.7%",
+                    "points": "22.10"
+                },
+                {
+                    "position": "RB",
+                    "name": "K. Drake",
+                    "salary": "$6,000",
+                    "owned": "50.0%",
+                    "points": "3.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "M. Valdes-Scantling",
+                    "salary": "$4,400",
+                    "owned": "33.3%",
+                    "points": "8.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "A. Cooper",
+                    "salary": "$6,700",
+                    "owned": "16.7%",
+                    "points": "36.40"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Moore",
+                    "salary": "$5,600",
+                    "owned": "50.0%",
+                    "points": "8.90"
+                },
+                {
+                    "position": "TE",
+                    "name": "T. Hockenson",
+                    "salary": "$4,800",
+                    "owned": "33.3%",
+                    "points": "10.90"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "B. Cooks",
+                    "salary": "$4,500",
+                    "owned": "16.7%",
+                    "points": "0.00"
+                },
+                {
+                    "position": "DST",
+                    "name": "Colts",
+                    "salary": "$3,300",
+                    "owned": "33.3%",
+                    "points": "7.00"
+                }
+            ]
+        },
+        {
+            "name": "paynetrain37",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "R. Wilson",
+                    "salary": "$7,800",
+                    "owned": "16.7%",
+                    "points": "24.90"
+                },
+                {
+                    "position": "RB",
+                    "name": "T. Gurley II",
+                    "salary": "$5,500",
+                    "owned": "16.7%",
+                    "points": "19.30"
+                },
+                {
+                    "position": "RB",
+                    "name": "J. Robinson",
+                    "salary": "$6,500",
+                    "owned": "33.3%",
+                    "points": "14.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "H. Renfrow",
+                    "salary": "$4,600",
+                    "owned": "16.7%",
+                    "points": "10.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "T. Lockett",
+                    "salary": "$7,000",
+                    "owned": "33.3%",
+                    "points": "5.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Lamb",
+                    "salary": "$5,400",
+                    "owned": "33.3%",
+                    "points": "25.20"
+                },
+                {
+                    "position": "TE",
+                    "name": "T. Hockenson",
+                    "salary": "$4,800",
+                    "owned": "33.3%",
+                    "points": "10.90"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "M. Valdes-Scantling",
+                    "salary": "$4,400",
+                    "owned": "33.3%",
+                    "points": "8.50"
+                },
+                {
+                    "position": "DST",
+                    "name": "Ravens",
+                    "salary": "$4,000",
+                    "owned": "16.7%",
+                    "points": "6.00"
+                }
+            ]
+        },
+        {
+            "name": "dhdrewhouston",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "A. Rodgers",
+                    "salary": "$7,100",
+                    "owned": "16.7%",
+                    "points": "32.58"
+                },
+                {
+                    "position": "RB",
+                    "name": "G. Bernard",
+                    "salary": "$4,400",
+                    "owned": "16.7%",
+                    "points": "1.90"
+                },
+                {
+                    "position": "RB",
+                    "name": "J. Robinson",
+                    "salary": "$6,500",
+                    "owned": "33.3%",
+                    "points": "14.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Beasley",
+                    "salary": "$4,700",
+                    "owned": "16.7%",
+                    "points": "12.20"
+                },
+                {
+                    "position": "WR",
+                    "name": "S. Diggs",
+                    "salary": "$6,800",
+                    "owned": "16.7%",
+                    "points": "20.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Lamb",
+                    "salary": "$5,400",
+                    "owned": "33.3%",
+                    "points": "25.20"
+                },
+                {
+                    "position": "TE",
+                    "name": "M. Gesicki",
+                    "salary": "$5,100",
+                    "owned": "33.3%",
+                    "points": "2.50"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "C. Kupp",
+                    "salary": "$6,700",
+                    "owned": "16.7%",
+                    "points": "17.70"
+                },
+                {
+                    "position": "DST",
+                    "name": "Cowboys",
+                    "salary": "$3,300",
+                    "owned": "16.7%",
+                    "points": "-2.00"
+                }
+            ]
+        },
+        {
+            "name": "rileyc98",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "R. Fitzpatrick",
+                    "salary": "$5,400",
+                    "owned": "33.3%",
+                    "points": "26.30"
+                },
+                {
+                    "position": "RB",
+                    "name": "K. Drake",
+                    "salary": "$6,000",
+                    "owned": "50.0%",
+                    "points": "3.50"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Kamara",
+                    "salary": "$8,000",
+                    "owned": "33.3%",
+                    "points": "20.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Parker",
+                    "salary": "$5,700",
+                    "owned": "33.3%",
+                    "points": "24.00"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Moore",
+                    "salary": "$5,600",
+                    "owned": "50.0%",
+                    "points": "8.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Metcalf",
+                    "salary": "$6,800",
+                    "owned": "16.7%",
+                    "points": "17.60"
+                },
+                {
+                    "position": "TE",
+                    "name": "A. Trautman",
+                    "salary": "$2,500",
+                    "owned": "16.7%",
+                    "points": "0.00"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "E. Elliott",
+                    "salary": "$7,800",
+                    "owned": "16.7%",
+                    "points": "21.50"
+                },
+                {
+                    "position": "DST",
+                    "name": "Lions",
+                    "salary": "$2,200",
+                    "owned": "16.7%",
+                    "points": "0.00"
+                }
+            ]
+        },
+        {
+            "name": "McKrank",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "R. Fitzpatrick",
+                    "salary": "$5,400",
+                    "owned": "33.3%",
+                    "points": "26.30"
+                },
+                {
+                    "position": "RB",
+                    "name": "D. Henderson Jr.",
+                    "salary": "$5,800",
+                    "owned": "33.3%",
+                    "points": "4.80"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Kamara",
+                    "salary": "$8,000",
+                    "owned": "33.3%",
+                    "points": "20.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "K. Allen",
+                    "salary": "$6,500",
+                    "owned": "16.7%",
+                    "points": "14.20"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Parker",
+                    "salary": "$5,700",
+                    "owned": "33.3%",
+                    "points": "24.00"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Moore",
+                    "salary": "$5,600",
+                    "owned": "50.0%",
+                    "points": "8.90"
+                },
+                {
+                    "position": "TE",
+                    "name": "M. Gesicki",
+                    "salary": "$5,100",
+                    "owned": "33.3%",
+                    "points": "2.50"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "T. Homer",
+                    "salary": "$4,000",
+                    "owned": "16.7%",
+                    "points": "7.80"
+                },
+                {
+                    "position": "DST",
+                    "name": "Rams",
+                    "salary": "$3,900",
+                    "owned": "16.7%",
+                    "points": "11.00"
+                }
+            ]
+        },
+        {
+            "name": "JashG98",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "D. Prescott",
+                    "salary": "$7,200",
+                    "owned": "33.3%",
+                    "points": "42.28"
+                },
+                {
+                    "position": "RB",
+                    "name": "J. Taylor",
+                    "salary": "$6,600",
+                    "owned": "16.7%",
+                    "points": "8.90"
+                },
+                {
+                    "position": "RB",
+                    "name": "K. Drake",
+                    "salary": "$6,000",
+                    "owned": "50.0%",
+                    "points": "3.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "Z. Pascal",
+                    "salary": "$4,400",
+                    "owned": "16.7%",
+                    "points": "8.80"
+                },
+                {
+                    "position": "WR",
+                    "name": "T. Lockett",
+                    "salary": "$7,000",
+                    "owned": "33.3%",
+                    "points": "5.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "R. Anderson",
+                    "salary": "$5,400",
+                    "owned": "16.7%",
+                    "points": "17.90"
+                },
+                {
+                    "position": "TE",
+                    "name": "D. Schultz\nQ",
+                    "salary": "$4,300",
+                    "owned": "16.7%",
+                    "points": "17.20"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "D. Henderson Jr.",
+                    "salary": "$5,800",
+                    "owned": "33.3%",
+                    "points": "4.80"
+                },
+                {
+                    "position": "DST",
+                    "name": "Colts",
+                    "salary": "$3,300",
+                    "owned": "33.3%",
+                    "points": "7.00"
+                }
+            ]
+        }
+    ]
+}

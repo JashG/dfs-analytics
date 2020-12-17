@@ -78,19 +78,31 @@ def main():
     login_button.click()
 
     # 4) Wait to be redirected to league page
-    WebDriverWait(driver, 30).until(
+    WebDriverWait(driver, 45).until(
         staleness_of(login_page)
     )
 
     # Wait for needed page elements to render
     view_results_selector = "a[class='_3HK8KxCG5YVXeIajdbhO8S _3mZ9ga1S8SdbKoe_2w2oWv _3zsZiSgfe7t24N3I4xkVOI']"
-    WebDriverWait(driver, 30).until(
+    WebDriverWait(driver, 45).until(
         EC.presence_of_all_elements_located((By.CSS_SELECTOR, view_results_selector))
     )
     # Get "View Results" anchor tag for each week
     results_anchor = driver.find_elements_by_css_selector(view_results_selector)
-    # TODO: move this logic to separate fcn.
-    for a in results_anchor:
+
+    current_week = 14
+    num_weeks = len(results_anchor)
+    current_idx = 0
+
+    #
+    # TODO: Abstract some of this stuff out into functions
+    #
+    while current_idx < num_weeks:
+        # Get all "View Results" anchor tags - need to do this at beginning of loop
+        # because we will navigate to the Results page for the week, then back to this
+        # home page, so existing reference will be stale
+        results_anchor = driver.find_elements_by_css_selector(view_results_selector)
+        a = results_anchor[current_idx]
         # Navigate to Results page for given week
         a.click()
 
@@ -110,13 +122,11 @@ def main():
         # Click through each team and save their lineups
         teams = driver.find_elements_by_css_selector(teams_table_selector)
         all_team_data = dict()
-        # We will manually keep up with week totals instead of scraping page to find it
-        current_week = 14
+        # Init object that will store each team's data for the week
+        current_week_key = "week_" + str(current_week)
+        print(current_week_key)
+        all_team_data[current_week_key] = []
         for team in teams:
-            # Init object that will store each team's data for the week
-            current_week_key = "week_" + str(current_week)
-            all_team_data[current_week_key] = []
-            current_week -= 1
             # Create obj to store data for this team
             team_data = dict()
             team_data["name"] = team.find_element_by_class_name("_3ASiVpv9WeTxdZXplZmdEC").text
@@ -144,12 +154,19 @@ def main():
             # Add this team's data to list of team data for the current week
             all_team_data[current_week_key].append(team_data)
 
-    all_team_data_dict = dict()
-    all_team_data_dict["weekly_data"] = all_team_data
-    all_team_data_json = json.dumps(all_team_data_dict, indent=4)
-    # Save JSON to file
-    with open("weekly_data.json", "w") as file:
-        file.write(all_team_data_json)
+        current_idx += 1
+        current_week -= 1
+
+        # Navigate back to League Home page so we can click the next week
+        driver.get(config.LEAGUE_URL)
+        WebDriverWait(driver, 45).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, view_results_selector))
+        )
+
+        weekly_data = dict()
+        weekly_data[current_week_key] = all_team_data[current_week_key]
+        with open("data/" + current_week_key + ".json", "w") as file:
+            file.write(json.dumps(weekly_data, indent=4))
 
 
 main()

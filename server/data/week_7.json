@@ -1,0 +1,412 @@
+{
+    "week_7": [
+        {
+            "name": "JashG98",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "K. Murray",
+                    "salary": "$7,100",
+                    "owned": "50.0%",
+                    "points": "41.10"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Kamara",
+                    "salary": "$7,900",
+                    "owned": "66.7%",
+                    "points": "22.80"
+                },
+                {
+                    "position": "RB",
+                    "name": "D. Swift",
+                    "salary": "$5,400",
+                    "owned": "16.7%",
+                    "points": "14.80"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Kirk",
+                    "salary": "$4,900",
+                    "owned": "66.7%",
+                    "points": "20.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "K. Golladay",
+                    "salary": "$6,700",
+                    "owned": "33.3%",
+                    "points": "20.40"
+                },
+                {
+                    "position": "WR",
+                    "name": "A. Brown",
+                    "salary": "$6,300",
+                    "owned": "33.3%",
+                    "points": "30.30"
+                },
+                {
+                    "position": "TE",
+                    "name": "H. Henry",
+                    "salary": "$4,500",
+                    "owned": "16.7%",
+                    "points": "5.30"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "D. Johnson\nQ",
+                    "salary": "$4,200",
+                    "owned": "33.3%",
+                    "points": "29.00"
+                },
+                {
+                    "position": "DST",
+                    "name": "Browns",
+                    "salary": "$2,800",
+                    "owned": "16.7%",
+                    "points": "7.00"
+                }
+            ]
+        },
+        {
+            "name": "rileyc98",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "M. Stafford",
+                    "salary": "$6,500",
+                    "owned": "16.7%",
+                    "points": "21.40"
+                },
+                {
+                    "position": "RB",
+                    "name": "J. Williams",
+                    "salary": "$4,000",
+                    "owned": "33.3%",
+                    "points": "21.40"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Kamara",
+                    "salary": "$7,900",
+                    "owned": "66.7%",
+                    "points": "22.80"
+                },
+                {
+                    "position": "WR",
+                    "name": "K. Golladay",
+                    "salary": "$6,700",
+                    "owned": "33.3%",
+                    "points": "20.40"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Ridley",
+                    "salary": "$7,300",
+                    "owned": "33.3%",
+                    "points": "19.90"
+                },
+                {
+                    "position": "WR",
+                    "name": "D. Johnson\nQ",
+                    "salary": "$4,200",
+                    "owned": "33.3%",
+                    "points": "29.00"
+                },
+                {
+                    "position": "TE",
+                    "name": "T. Kelce",
+                    "salary": "$6,300",
+                    "owned": "16.7%",
+                    "points": "6.10"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "G. Bernard",
+                    "salary": "$4,500",
+                    "owned": "33.3%",
+                    "points": "20.60"
+                },
+                {
+                    "position": "DST",
+                    "name": "WAS Football Team",
+                    "salary": "$2,500",
+                    "owned": "33.3%",
+                    "points": "17.00"
+                }
+            ]
+        },
+        {
+            "name": "McKrank",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "K. Murray",
+                    "salary": "$7,100",
+                    "owned": "50.0%",
+                    "points": "41.10"
+                },
+                {
+                    "position": "RB",
+                    "name": "G. Bernard",
+                    "salary": "$4,500",
+                    "owned": "33.3%",
+                    "points": "20.60"
+                },
+                {
+                    "position": "RB",
+                    "name": "J. Williams",
+                    "salary": "$4,000",
+                    "owned": "33.3%",
+                    "points": "21.40"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Kirk",
+                    "salary": "$4,900",
+                    "owned": "66.7%",
+                    "points": "20.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "K. Allen",
+                    "salary": "$6,200",
+                    "owned": "16.7%",
+                    "points": "25.50"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Ridley",
+                    "salary": "$7,300",
+                    "owned": "33.3%",
+                    "points": "19.90"
+                },
+                {
+                    "position": "TE",
+                    "name": "D. Fells",
+                    "salary": "$4,100",
+                    "owned": "16.7%",
+                    "points": "0.00"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "A. Kamara",
+                    "salary": "$7,900",
+                    "owned": "66.7%",
+                    "points": "22.80"
+                },
+                {
+                    "position": "DST",
+                    "name": "Buccaneers",
+                    "salary": "$4,000",
+                    "owned": "16.7%",
+                    "points": "6.00"
+                }
+            ]
+        },
+        {
+            "name": "dhdrewhouston",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "A. Dalton\nQ",
+                    "salary": "$6,000",
+                    "owned": "16.7%",
+                    "points": "3.60"
+                },
+                {
+                    "position": "RB",
+                    "name": "R. Jones II",
+                    "salary": "$6,200",
+                    "owned": "33.3%",
+                    "points": "10.60"
+                },
+                {
+                    "position": "RB",
+                    "name": "T. Gurley II",
+                    "salary": "$6,000",
+                    "owned": "50.0%",
+                    "points": "22.20"
+                },
+                {
+                    "position": "WR",
+                    "name": "T. McLaurin",
+                    "salary": "$5,800",
+                    "owned": "33.3%",
+                    "points": "22.00"
+                },
+                {
+                    "position": "WR",
+                    "name": "A. Brown",
+                    "salary": "$6,300",
+                    "owned": "33.3%",
+                    "points": "30.30"
+                },
+                {
+                    "position": "WR",
+                    "name": "T. Higgins",
+                    "salary": "$5,300",
+                    "owned": "16.7%",
+                    "points": "18.80"
+                },
+                {
+                    "position": "TE",
+                    "name": "T. Hockenson",
+                    "salary": "$5,100",
+                    "owned": "16.7%",
+                    "points": "16.90"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "K. Hunt",
+                    "salary": "$6,800",
+                    "owned": "16.7%",
+                    "points": "19.20"
+                },
+                {
+                    "position": "DST",
+                    "name": "WAS Football Team",
+                    "salary": "$2,500",
+                    "owned": "33.3%",
+                    "points": "17.00"
+                }
+            ]
+        },
+        {
+            "name": "JParrot12",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "A. Rodgers",
+                    "salary": "$7,000",
+                    "owned": "16.7%",
+                    "points": "27.32"
+                },
+                {
+                    "position": "RB",
+                    "name": "T. Gurley II",
+                    "salary": "$6,000",
+                    "owned": "50.0%",
+                    "points": "22.20"
+                },
+                {
+                    "position": "RB",
+                    "name": "A. Kamara",
+                    "salary": "$7,900",
+                    "owned": "66.7%",
+                    "points": "22.80"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Kirk",
+                    "salary": "$4,900",
+                    "owned": "66.7%",
+                    "points": "20.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "T. McLaurin",
+                    "salary": "$5,800",
+                    "owned": "33.3%",
+                    "points": "22.00"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Claypool",
+                    "salary": "$5,700",
+                    "owned": "33.3%",
+                    "points": "0.80"
+                },
+                {
+                    "position": "TE",
+                    "name": "R. Tonyan",
+                    "salary": "$4,600",
+                    "owned": "33.3%",
+                    "points": "5.20"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "R. Gage\nQ",
+                    "salary": "$4,400",
+                    "owned": "16.7%",
+                    "points": "11.40"
+                },
+                {
+                    "position": "DST",
+                    "name": "Chargers",
+                    "salary": "$3,400",
+                    "owned": "16.7%",
+                    "points": "6.00"
+                }
+            ]
+        },
+        {
+            "name": "paynetrain37",
+            "lineup": [
+                {
+                    "position": "QB",
+                    "name": "K. Murray",
+                    "salary": "$7,100",
+                    "owned": "50.0%",
+                    "points": "41.10"
+                },
+                {
+                    "position": "RB",
+                    "name": "R. Jones II",
+                    "salary": "$6,200",
+                    "owned": "33.3%",
+                    "points": "10.60"
+                },
+                {
+                    "position": "RB",
+                    "name": "T. Gurley II",
+                    "salary": "$6,000",
+                    "owned": "50.0%",
+                    "points": "22.20"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Kirk",
+                    "salary": "$4,900",
+                    "owned": "66.7%",
+                    "points": "20.70"
+                },
+                {
+                    "position": "WR",
+                    "name": "J. Crowder\nQ",
+                    "salary": "$5,900",
+                    "owned": "16.7%",
+                    "points": "0.00"
+                },
+                {
+                    "position": "WR",
+                    "name": "C. Claypool",
+                    "salary": "$5,700",
+                    "owned": "33.3%",
+                    "points": "0.80"
+                },
+                {
+                    "position": "TE",
+                    "name": "R. Tonyan",
+                    "salary": "$4,600",
+                    "owned": "33.3%",
+                    "points": "5.20"
+                },
+                {
+                    "position": "FLEX",
+                    "name": "D. Henderson Jr.",
+                    "salary": "$5,500",
+                    "owned": "16.7%",
+                    "points": "9.70"
+                },
+                {
+                    "position": "DST",
+                    "name": "Patriots",
+                    "salary": "$3,900",
+                    "owned": "16.7%",
+                    "points": "4.00"
+                }
+            ]
+        }
+    ]
+}
