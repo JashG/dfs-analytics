@@ -1,3 +1,4 @@
+import sys
 import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -8,7 +9,7 @@ from selenium.webdriver.support.expected_conditions import staleness_of
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
-from ..config import secrets, config
+from config import secrets, config
 
 
 def get_driver():
