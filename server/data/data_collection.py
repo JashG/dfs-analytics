@@ -1,6 +1,4 @@
 import json
-import secrets
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -8,12 +6,9 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.expected_conditions import staleness_of
 from selenium.webdriver.support.ui import WebDriverWait
-
 from webdriver_manager.chrome import ChromeDriverManager
 
-# Constants
-BASE_URL = "https://www.draftkings.com"
-LEAGUE_URL = "https://www.draftkings.com/leagues/a6l7mka8/contests/history"
+from ..config import secrets, config
 
 
 def get_driver():
@@ -48,7 +43,7 @@ def get_player_data(row):
 
 def main():
     driver = get_driver()
-    driver.get(LEAGUE_URL)
+    driver.get(config.LEAGUE_URL)
 
     # 1) Navigate to Login page
     try:
@@ -62,9 +57,9 @@ def main():
     # 2) Enter Login info
     try:
         username_input = driver.find_element_by_css_selector("[data-test-id=username-input]")
-        username_input.send_keys(secrets.dk_username)
+        username_input.send_keys(secrets.DK_USERNAME)
         password_input = driver.find_element_by_css_selector("[type=password]")
-        password_input.send_keys(secrets.dk_password)
+        password_input.send_keys(secrets.DK_PASSWORD)
     except NoSuchElementException as e:
         print(e)
         exit(1)

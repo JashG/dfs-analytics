@@ -3,6 +3,7 @@
 .DS_Store
 
 server/venv
-server/secrets.py
+server/config/secrets.py
+server/config/config.py
 
 client/node_modules
