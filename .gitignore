@@ -13,5 +13,3 @@ server/config/secrets.py
 server/config/config.py
 server/config/__pycache__/*
 
-# Client
-client/node_modules
