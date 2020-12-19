@@ -1,10 +1,17 @@
+# IDE/Mac files
 .idea
 .client
 .DS_Store
 
+# Local testing
+server/data/testing.py
+
+# Server
+server/data/__pycache__/*
 server/venv
 server/config/secrets.py
 server/config/config.py
 server/config/__pycache__/*
 
+# Client
 client/node_modules

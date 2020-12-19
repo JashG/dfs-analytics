@@ -1,0 +1,1680 @@
+{
+    "McKrank": {
+        "avg_points": 143.67,
+        "total_points": 1724.02,
+        "num_weeks": 12,
+        "player_usage": {
+            "D. Prescott": [
+                "week_3"
+            ],
+            "J. Wilson Jr.": [
+                "week_3"
+            ],
+            "M. Sanders": [
+                "week_3"
+            ],
+            "A. Cooper": [
+                "week_3"
+            ],
+            "C. Lamb": [
+                "week_3"
+            ],
+            "T. McLaurin": [
+                "week_3"
+            ],
+            "M. Andrews": [
+                "week_3"
+            ],
+            "D. Singletary": [
+                "week_3"
+            ],
+            "Buccaneers": [
+                "week_3",
+                "week_7",
+                "week_14"
+            ],
+            "R. Fitzpatrick": [
+                "week_4",
+                "week_12"
+            ],
+            "D. Henderson Jr.": [
+                "week_4"
+            ],
+            "A. Kamara": [
+                "week_4",
+                "week_7"
+            ],
+            "K. Allen": [
+                "week_4",
+                "week_7",
+                "week_8",
+                "week_10"
+            ],
+            "D. Parker": [
+                "week_4",
+                "week_12"
+            ],
+            "D. Moore": [
+                "week_4"
+            ],
+            "M. Gesicki": [
+                "week_4"
+            ],
+            "T. Homer": [
+                "week_4"
+            ],
+            "Rams": [
+                "week_4",
+                "week_10"
+            ],
+            "G. Minshew II": [
+                "week_5"
+            ],
+            "M. Davis": [
+                "week_5",
+                "week_6"
+            ],
+            "A. Gibson": [
+                "week_5"
+            ],
+            "J. Jefferson": [
+                "week_5"
+            ],
+            "D. Slayton": [
+                "week_5"
+            ],
+            "R. Anderson": [
+                "week_5"
+            ],
+            "E. Engram": [
+                "week_5"
+            ],
+            "E. Elliott": [
+                "week_5",
+                "week_11"
+            ],
+            "Steelers": [
+                "week_5"
+            ],
+            "K. Murray": [
+                "week_6",
+                "week_7"
+            ],
+            "K. Hunt": [
+                "week_6"
+            ],
+            "C. Beasley": [
+                "week_6",
+                "week_9"
+            ],
+            "C. Claypool": [
+                "week_6"
+            ],
+            "L. Shenault Jr.": [
+                "week_6"
+            ],
+            "D. Fells": [
+                "week_6",
+                "week_7"
+            ],
+            "J. Robinson": [
+                "week_6"
+            ],
+            "Dolphins": [
+                "week_6"
+            ],
+            "G. Bernard": [
+                "week_7"
+            ],
+            "J. Williams": [
+                "week_7"
+            ],
+            "C. Kirk": [
+                "week_7"
+            ],
+            "C. Ridley": [
+                "week_7",
+                "week_12"
+            ],
+            "C. Wentz": [
+                "week_8"
+            ],
+            "B. Scott": [
+                "week_8"
+            ],
+            "J. Williams\nC19": [
+                "week_8"
+            ],
+            "K. Golladay\nD": [
+                "week_8"
+            ],
+            "D. Mims": [
+                "week_8",
+                "week_13"
+            ],
+            "G. Kittle\nIR": [
+                "week_8"
+            ],
+            "T. Fulgham": [
+                "week_8"
+            ],
+            "Browns": [
+                "week_8"
+            ],
+            "M. Ryan": [
+                "week_9"
+            ],
+            "C. Edmonds": [
+                "week_9"
+            ],
+            "D. Cook": [
+                "week_9",
+                "week_11",
+                "week_12"
+            ],
+            "J. Jones": [
+                "week_9"
+            ],
+            "M. Hall": [
+                "week_9"
+            ],
+            "N. Fant\nQ": [
+                "week_9"
+            ],
+            "J. Jackson\nQ": [
+                "week_9"
+            ],
+            "Giants": [
+                "week_9"
+            ],
+            "J. Goff": [
+                "week_10",
+                "week_13"
+            ],
+            "A. Jones": [
+                "week_10"
+            ],
+            "D. Swift": [
+                "week_10"
+            ],
+            "D. Hopkins": [
+                "week_10"
+            ],
+            "S. Diggs": [
+                "week_10"
+            ],
+            "L. Thomas": [
+                "week_10"
+            ],
+            "J. Reynolds": [
+                "week_10"
+            ],
+            "C. Newton": [
+                "week_11"
+            ],
+            "J. McKissic": [
+                "week_11"
+            ],
+            "M. Gallup": [
+                "week_11"
+            ],
+            "B. Perriman": [
+                "week_11",
+                "week_14"
+            ],
+            "J. Meyers": [
+                "week_11"
+            ],
+            "T. Kelce": [
+                "week_11",
+                "week_12"
+            ],
+            "WAS Football Team": [
+                "week_11"
+            ],
+            "J. Wilkins": [
+                "week_12"
+            ],
+            "A. Brown": [
+                "week_12"
+            ],
+            "G. Davis": [
+                "week_12"
+            ],
+            "Broncos": [
+                "week_12"
+            ],
+            "A. Ekeler": [
+                "week_13"
+            ],
+            "M. Gaskin": [
+                "week_13"
+            ],
+            "D. Adams": [
+                "week_13",
+                "week_14"
+            ],
+            "C. Kupp": [
+                "week_13"
+            ],
+            "J. Landry": [
+                "week_13"
+            ],
+            "A. Firkser": [
+                "week_13"
+            ],
+            "Seahawks": [
+                "week_13"
+            ],
+            "A. Rodgers": [
+                "week_14"
+            ],
+            "J. Taylor": [
+                "week_14"
+            ],
+            "D. Henry": [
+                "week_14"
+            ],
+            "J. Grant\nQ": [
+                "week_14"
+            ],
+            "E. Ebron": [
+                "week_14"
+            ],
+            "C. Hansen": [
+                "week_14"
+            ]
+        }
+    },
+    "JashG98": {
+        "avg_points": 141.4,
+        "total_points": 1696.84,
+        "num_weeks": 12,
+        "player_usage": {
+            "A. Rodgers": [
+                "week_3"
+            ],
+            "M. Gordon III": [
+                "week_3"
+            ],
+            "A. Ekeler": [
+                "week_3",
+                "week_13"
+            ],
+            "C. Lamb": [
+                "week_3",
+                "week_14"
+            ],
+            "A. Robinson II": [
+                "week_3",
+                "week_13"
+            ],
+            "W. Fuller V": [
+                "week_3"
+            ],
+            "H. Henry": [
+                "week_3",
+                "week_5",
+                "week_7"
+            ],
+            "M. Valdes-Scantling": [
+                "week_3"
+            ],
+            "Chargers": [
+                "week_3"
+            ],
+            "D. Prescott": [
+                "week_4"
+            ],
+            "J. Taylor": [
+                "week_4"
+            ],
+            "K. Drake": [
+                "week_4"
+            ],
+            "Z. Pascal": [
+                "week_4"
+            ],
+            "T. Lockett": [
+                "week_4"
+            ],
+            "R. Anderson": [
+                "week_4",
+                "week_5"
+            ],
+            "D. Schultz\nQ": [
+                "week_4"
+            ],
+            "D. Henderson Jr.": [
+                "week_4"
+            ],
+            "Colts": [
+                "week_4",
+                "week_5"
+            ],
+            "T. Bridgewater": [
+                "week_5"
+            ],
+            "C. Carson": [
+                "week_5"
+            ],
+            "C. Edwards-Helaire": [
+                "week_5"
+            ],
+            "D. Metcalf": [
+                "week_5"
+            ],
+            "D. Slayton": [
+                "week_5"
+            ],
+            "J. Jefferson": [
+                "week_5",
+                "week_13"
+            ],
+            "P. Mahomes": [
+                "week_6"
+            ],
+            "M. Gaskin": [
+                "week_6"
+            ],
+            "D. Henry": [
+                "week_6",
+                "week_8",
+                "week_14"
+            ],
+            "T. Hill": [
+                "week_6",
+                "week_11"
+            ],
+            "A. Thielen": [
+                "week_6"
+            ],
+            "K. Golladay": [
+                "week_6",
+                "week_7"
+            ],
+            "I. Smith Jr.": [
+                "week_6"
+            ],
+            "D. Byrd": [
+                "week_6"
+            ],
+            "Dolphins": [
+                "week_6",
+                "week_11"
+            ],
+            "K. Murray": [
+                "week_7"
+            ],
+            "A. Kamara": [
+                "week_7"
+            ],
+            "D. Swift": [
+                "week_7"
+            ],
+            "C. Kirk": [
+                "week_7"
+            ],
+            "A. Brown": [
+                "week_7"
+            ],
+            "D. Johnson\nQ": [
+                "week_7"
+            ],
+            "Browns": [
+                "week_7"
+            ],
+            "D. Carr": [
+                "week_8"
+            ],
+            "G. Bernard": [
+                "week_8"
+            ],
+            "T. Fulgham": [
+                "week_8"
+            ],
+            "B. Aiyuk": [
+                "week_8"
+            ],
+            "N. Agholor": [
+                "week_8"
+            ],
+            "E. Ebron": [
+                "week_8"
+            ],
+            "K. Hunt": [
+                "week_8"
+            ],
+            "Eagles": [
+                "week_8"
+            ],
+            "J. Herbert": [
+                "week_9",
+                "week_10",
+                "week_14"
+            ],
+            "J. Conner": [
+                "week_9"
+            ],
+            "D. Cook": [
+                "week_9",
+                "week_12"
+            ],
+            "K. Allen": [
+                "week_9",
+                "week_10"
+            ],
+            "J. Jones": [
+                "week_9"
+            ],
+            "K. Cole Sr.": [
+                "week_9"
+            ],
+            "A. Okwuegbunam\nIR": [
+                "week_9"
+            ],
+            "J. Jeudy": [
+                "week_9"
+            ],
+            "Vikings": [
+                "week_9"
+            ],
+            "D. Johnson": [
+                "week_10",
+                "week_10",
+                "week_11"
+            ],
+            "A. Jones": [
+                "week_10"
+            ],
+            "T. McLaurin": [
+                "week_10"
+            ],
+            "E. Engram": [
+                "week_10"
+            ],
+            "J. McKissic": [
+                "week_10",
+                "week_11"
+            ],
+            "Giants": [
+                "week_10"
+            ],
+            "A. Smith": [
+                "week_11"
+            ],
+            "K. Ballage": [
+                "week_11"
+            ],
+            "T. McLaurin\nQ": [
+                "week_11"
+            ],
+            "H. Hurst": [
+                "week_11"
+            ],
+            "B. Cooks": [
+                "week_11"
+            ],
+            "J. Allen": [
+                "week_12"
+            ],
+            "B. Hill": [
+                "week_12"
+            ],
+            "J. Reagor": [
+                "week_12"
+            ],
+            "S. Diggs": [
+                "week_12"
+            ],
+            "M. Pittman Jr.": [
+                "week_12",
+                "week_13"
+            ],
+            "R. Tonyan": [
+                "week_12",
+                "week_13"
+            ],
+            "N. Hines": [
+                "week_12"
+            ],
+            "Saints": [
+                "week_12"
+            ],
+            "M. Trubisky": [
+                "week_13"
+            ],
+            "D. Montgomery": [
+                "week_13",
+                "week_14"
+            ],
+            "R. Woods": [
+                "week_13"
+            ],
+            "Chiefs": [
+                "week_13"
+            ],
+            "K. Allen\nQ": [
+                "week_14"
+            ],
+            "B. Perriman": [
+                "week_14"
+            ],
+            "H. Henry\nQ": [
+                "week_14"
+            ],
+            "T. Patrick": [
+                "week_14"
+            ],
+            "Seahawks": [
+                "week_14"
+            ]
+        }
+    },
+    "dhdrewhouston": {
+        "avg_points": 130.83,
+        "total_points": 1569.92,
+        "num_weeks": 12,
+        "player_usage": {
+            "D. Prescott": [
+                "week_3"
+            ],
+            "C. Edwards-Helaire": [
+                "week_3",
+                "week_5",
+                "week_14"
+            ],
+            "A. Ekeler": [
+                "week_3"
+            ],
+            "C. Lamb": [
+                "week_3",
+                "week_4",
+                "week_9",
+                "week_14"
+            ],
+            "D. Slayton": [
+                "week_3"
+            ],
+            "C. Ridley": [
+                "week_3",
+                "week_11"
+            ],
+            "D. Schultz": [
+                "week_3",
+                "week_11"
+            ],
+            "N. Hines": [
+                "week_3",
+                "week_14"
+            ],
+            "Giants": [
+                "week_3",
+                "week_10"
+            ],
+            "A. Rodgers": [
+                "week_4"
+            ],
+            "G. Bernard": [
+                "week_4",
+                "week_14"
+            ],
+            "J. Robinson": [
+                "week_4",
+                "week_6",
+                "week_9",
+                "week_10"
+            ],
+            "C. Beasley": [
+                "week_4",
+                "week_12"
+            ],
+            "S. Diggs": [
+                "week_4",
+                "week_9"
+            ],
+            "M. Gesicki": [
+                "week_4"
+            ],
+            "C. Kupp": [
+                "week_4",
+                "week_10"
+            ],
+            "Cowboys": [
+                "week_4",
+                "week_14"
+            ],
+            "D. Prescott\nO": [
+                "week_5"
+            ],
+            "A. Gibson": [
+                "week_5",
+                "week_10"
+            ],
+            "D. Metcalf": [
+                "week_5"
+            ],
+            "G. Tate": [
+                "week_5"
+            ],
+            "O. Zaccheaus": [
+                "week_5"
+            ],
+            "H. Henry": [
+                "week_5"
+            ],
+            "E. Elliott": [
+                "week_5"
+            ],
+            "Rams": [
+                "week_5"
+            ],
+            "M. Stafford": [
+                "week_6"
+            ],
+            "M. Gaskin": [
+                "week_6"
+            ],
+            "D. Montgomery": [
+                "week_6"
+            ],
+            "J. Jefferson": [
+                "week_6",
+                "week_11"
+            ],
+            "J. Jeudy": [
+                "week_6"
+            ],
+            "C. Claypool": [
+                "week_6"
+            ],
+            "E. Engram": [
+                "week_6",
+                "week_9",
+                "week_10"
+            ],
+            "Patriots": [
+                "week_6"
+            ],
+            "A. Dalton\nQ": [
+                "week_7"
+            ],
+            "R. Jones II": [
+                "week_7",
+                "week_11"
+            ],
+            "T. Gurley II": [
+                "week_7"
+            ],
+            "T. McLaurin": [
+                "week_7",
+                "week_14"
+            ],
+            "A. Brown": [
+                "week_7"
+            ],
+            "T. Higgins": [
+                "week_7"
+            ],
+            "T. Hockenson": [
+                "week_7"
+            ],
+            "K. Hunt": [
+                "week_7",
+                "week_8"
+            ],
+            "WAS Football Team": [
+                "week_7"
+            ],
+            "R. Wilson": [
+                "week_8"
+            ],
+            "J. Jacobs": [
+                "week_8"
+            ],
+            "B. Aiyuk": [
+                "week_8",
+                "week_10"
+            ],
+            "T. Boyd": [
+                "week_8"
+            ],
+            "J. Reynolds": [
+                "week_8"
+            ],
+            "D. Waller": [
+                "week_8"
+            ],
+            "D. Goedert": [
+                "week_8"
+            ],
+            "Eagles": [
+                "week_8"
+            ],
+            "D. Carr": [
+                "week_9",
+                "week_12"
+            ],
+            "J. Jackson\nQ": [
+                "week_9"
+            ],
+            "M. Jones Jr.": [
+                "week_9"
+            ],
+            "D. Cook": [
+                "week_9",
+                "week_13"
+            ],
+            "Falcons": [
+                "week_9"
+            ],
+            "T. Tagovailoa": [
+                "week_10"
+            ],
+            "J. Brown\nQ": [
+                "week_10"
+            ],
+            "K. Allen": [
+                "week_10"
+            ],
+            "A. Smith": [
+                "week_11"
+            ],
+            "A. Kamara": [
+                "week_11"
+            ],
+            "W. Fuller V": [
+                "week_11"
+            ],
+            "D. Robinson": [
+                "week_11"
+            ],
+            "Vikings": [
+                "week_11"
+            ],
+            "C. Edmonds": [
+                "week_12"
+            ],
+            "J. Jacobs\nQ": [
+                "week_12"
+            ],
+            "M. Evans": [
+                "week_12"
+            ],
+            "T. Hill": [
+                "week_12"
+            ],
+            "R. Anderson": [
+                "week_12"
+            ],
+            "A. Hooper": [
+                "week_12"
+            ],
+            "Seahawks": [
+                "week_12"
+            ],
+            "J. Goff": [
+                "week_13"
+            ],
+            "J. Taylor": [
+                "week_13"
+            ],
+            "R. Woods": [
+                "week_13"
+            ],
+            "D. Parker": [
+                "week_13"
+            ],
+            "B. Perriman": [
+                "week_13"
+            ],
+            "N. Fant": [
+                "week_13"
+            ],
+            "L. Murray": [
+                "week_13"
+            ],
+            "Titans": [
+                "week_13"
+            ],
+            "L. Jackson": [
+                "week_14"
+            ],
+            "K. Allen\nQ": [
+                "week_14"
+            ],
+            "M. Andrews": [
+                "week_14"
+            ]
+        }
+    },
+    "paynetrain37": {
+        "avg_points": 131.23,
+        "total_points": 1574.76,
+        "num_weeks": 12,
+        "player_usage": {
+            "A. Rodgers": [
+                "week_3"
+            ],
+            "A. Ekeler": [
+                "week_3"
+            ],
+            "J. McKinnon\nQ": [
+                "week_3"
+            ],
+            "A. Cooper": [
+                "week_3"
+            ],
+            "C. Lamb": [
+                "week_3",
+                "week_4",
+                "week_5"
+            ],
+            "W. Fuller V": [
+                "week_3"
+            ],
+            "J. Smith": [
+                "week_3"
+            ],
+            "J. Kelley": [
+                "week_3"
+            ],
+            "Chargers": [
+                "week_3",
+                "week_13"
+            ],
+            "R. Wilson": [
+                "week_4",
+                "week_5"
+            ],
+            "T. Gurley II": [
+                "week_4",
+                "week_7"
+            ],
+            "J. Robinson": [
+                "week_4",
+                "week_12"
+            ],
+            "H. Renfrow": [
+                "week_4"
+            ],
+            "T. Lockett": [
+                "week_4"
+            ],
+            "T. Hockenson": [
+                "week_4"
+            ],
+            "M. Valdes-Scantling": [
+                "week_4"
+            ],
+            "Ravens": [
+                "week_4",
+                "week_6"
+            ],
+            "A. Kamara": [
+                "week_5",
+                "week_11"
+            ],
+            "C. Carson": [
+                "week_5"
+            ],
+            "J. Jefferson": [
+                "week_5",
+                "week_9"
+            ],
+            "R. Anderson": [
+                "week_5"
+            ],
+            "H. Henry": [
+                "week_5"
+            ],
+            "D. Parham Jr.": [
+                "week_5"
+            ],
+            "Chiefs": [
+                "week_5"
+            ],
+            "R. Tannehill": [
+                "week_6",
+                "week_14"
+            ],
+            "R. Jones II": [
+                "week_6",
+                "week_7"
+            ],
+            "J. Taylor": [
+                "week_6"
+            ],
+            "J. Crowder": [
+                "week_6"
+            ],
+            "K. Golladay": [
+                "week_6"
+            ],
+            "T. Patrick": [
+                "week_6",
+                "week_9",
+                "week_14"
+            ],
+            "J. Smith\nQ": [
+                "week_6"
+            ],
+            "C. Claypool": [
+                "week_6",
+                "week_7"
+            ],
+            "K. Murray": [
+                "week_7"
+            ],
+            "C. Kirk": [
+                "week_7",
+                "week_9"
+            ],
+            "J. Crowder\nQ": [
+                "week_7"
+            ],
+            "R. Tonyan": [
+                "week_7"
+            ],
+            "D. Henderson Jr.": [
+                "week_7"
+            ],
+            "Patriots": [
+                "week_7"
+            ],
+            "D. Carr": [
+                "week_8",
+                "week_9",
+                "week_12"
+            ],
+            "D. Cook": [
+                "week_8",
+                "week_9",
+                "week_13"
+            ],
+            "M. Gaskin\nO": [
+                "week_8"
+            ],
+            "T. Fulgham": [
+                "week_8",
+                "week_11",
+                "week_12"
+            ],
+            "N. Agholor": [
+                "week_8"
+            ],
+            "T. Boyd": [
+                "week_8"
+            ],
+            "D. Waller": [
+                "week_8",
+                "week_12"
+            ],
+            "M. Evans": [
+                "week_8"
+            ],
+            "Bills": [
+                "week_8"
+            ],
+            "J. Jackson\nQ": [
+                "week_9"
+            ],
+            "N. Fant\nQ": [
+                "week_9"
+            ],
+            "M. Williams": [
+                "week_9"
+            ],
+            "Steelers": [
+                "week_9"
+            ],
+            "J. Goff": [
+                "week_10",
+                "week_13"
+            ],
+            "D. Johnson": [
+                "week_10"
+            ],
+            "A. Jones": [
+                "week_10"
+            ],
+            "R. Woods": [
+                "week_10",
+                "week_12",
+                "week_13"
+            ],
+            "C. Kupp": [
+                "week_10",
+                "week_13"
+            ],
+            "B. Cooks": [
+                "week_10"
+            ],
+            "J. Graham": [
+                "week_10"
+            ],
+            "A. Gibson": [
+                "week_10"
+            ],
+            "Broncos": [
+                "week_10"
+            ],
+            "T. Hill": [
+                "week_11"
+            ],
+            "N. Hines": [
+                "week_11",
+                "week_12"
+            ],
+            "J. McKissic": [
+                "week_11"
+            ],
+            "K. Allen": [
+                "week_11"
+            ],
+            "J. Meyers": [
+                "week_11",
+                "week_12"
+            ],
+            "T. Hockenson\nQ": [
+                "week_11"
+            ],
+            "Dolphins": [
+                "week_11"
+            ],
+            "J. Jacobs\nQ": [
+                "week_12"
+            ],
+            "Saints": [
+                "week_12"
+            ],
+            "D. Montgomery": [
+                "week_13",
+                "week_14"
+            ],
+            "B. Aiyuk": [
+                "week_13"
+            ],
+            "A. Robinson II": [
+                "week_13"
+            ],
+            "A. Firkser": [
+                "week_13"
+            ],
+            "A. Ekeler\nQ": [
+                "week_14"
+            ],
+            "T. Hilton": [
+                "week_14"
+            ],
+            "C. Davis": [
+                "week_14"
+            ],
+            "A. Brown": [
+                "week_14"
+            ],
+            "M. Gesicki\nQ": [
+                "week_14"
+            ],
+            "Seahawks": [
+                "week_14"
+            ]
+        }
+    },
+    "rileyc98": {
+        "avg_points": 125.86,
+        "total_points": 1510.28,
+        "num_weeks": 12,
+        "player_usage": {
+            "N. Mullens": [
+                "week_3"
+            ],
+            "A. Jones": [
+                "week_3",
+                "week_10",
+                "week_14"
+            ],
+            "M. Sanders": [
+                "week_3"
+            ],
+            "T. Hill": [
+                "week_3",
+                "week_6",
+                "week_11"
+            ],
+            "M. Jones Jr.": [
+                "week_3"
+            ],
+            "D. Johnson\nQ": [
+                "week_3",
+                "week_7"
+            ],
+            "L. Thomas": [
+                "week_3"
+            ],
+            "D. Montgomery": [
+                "week_3",
+                "week_6",
+                "week_13"
+            ],
+            "Patriots": [
+                "week_3"
+            ],
+            "R. Fitzpatrick": [
+                "week_4"
+            ],
+            "K. Drake": [
+                "week_4"
+            ],
+            "A. Kamara": [
+                "week_4",
+                "week_7",
+                "week_11"
+            ],
+            "D. Parker": [
+                "week_4"
+            ],
+            "D. Moore": [
+                "week_4"
+            ],
+            "D. Metcalf": [
+                "week_4"
+            ],
+            "A. Trautman": [
+                "week_4"
+            ],
+            "E. Elliott": [
+                "week_4",
+                "week_5",
+                "week_6"
+            ],
+            "Lions": [
+                "week_4",
+                "week_8"
+            ],
+            "D. Jones": [
+                "week_5"
+            ],
+            "C. Edwards-Helaire": [
+                "week_5",
+                "week_8"
+            ],
+            "A. Cooper": [
+                "week_5"
+            ],
+            "D. Slayton": [
+                "week_5"
+            ],
+            "R. Woods": [
+                "week_5",
+                "week_10"
+            ],
+            "D. Waller": [
+                "week_5",
+                "week_9",
+                "week_12"
+            ],
+            "O. Zaccheaus": [
+                "week_5"
+            ],
+            "Dolphins": [
+                "week_5"
+            ],
+            "P. Mahomes": [
+                "week_6"
+            ],
+            "M. Davis": [
+                "week_6"
+            ],
+            "S. Diggs": [
+                "week_6",
+                "week_9"
+            ],
+            "J. Smith": [
+                "week_6"
+            ],
+            "I. Smith Jr.": [
+                "week_6"
+            ],
+            "Bengals": [
+                "week_6",
+                "week_11"
+            ],
+            "M. Stafford": [
+                "week_7"
+            ],
+            "J. Williams": [
+                "week_7"
+            ],
+            "K. Golladay": [
+                "week_7"
+            ],
+            "C. Ridley": [
+                "week_7",
+                "week_11",
+                "week_12"
+            ],
+            "T. Kelce": [
+                "week_7"
+            ],
+            "G. Bernard": [
+                "week_7"
+            ],
+            "WAS Football Team": [
+                "week_7"
+            ],
+            "A. Rodgers": [
+                "week_8"
+            ],
+            "J. Taylor\nQ": [
+                "week_8"
+            ],
+            "S. Miller": [
+                "week_8"
+            ],
+            "D. Adams": [
+                "week_8"
+            ],
+            "A. Thielen": [
+                "week_8",
+                "week_14"
+            ],
+            "H. Bryant": [
+                "week_8"
+            ],
+            "J. Reagor": [
+                "week_8"
+            ],
+            "D. Carr": [
+                "week_9"
+            ],
+            "C. McCaffrey\nQ": [
+                "week_9"
+            ],
+            "D. Dallas": [
+                "week_9"
+            ],
+            "D. Johnson": [
+                "week_9",
+                "week_11"
+            ],
+            "J. Jones": [
+                "week_9"
+            ],
+            "C. Blake": [
+                "week_9"
+            ],
+            "Vikings": [
+                "week_9"
+            ],
+            "J. Goff": [
+                "week_10"
+            ],
+            "J. Robinson": [
+                "week_10"
+            ],
+            "T. Lockett\nQ": [
+                "week_10"
+            ],
+            "K. Allen": [
+                "week_10",
+                "week_11",
+                "week_12"
+            ],
+            "A. Hooper": [
+                "week_10"
+            ],
+            "J. Reynolds": [
+                "week_10"
+            ],
+            "Rams": [
+                "week_10"
+            ],
+            "J. McKissic": [
+                "week_11",
+                "week_14"
+            ],
+            "M. Andrews\nQ": [
+                "week_11"
+            ],
+            "D. Mims": [
+                "week_11"
+            ],
+            "J. Herbert": [
+                "week_12"
+            ],
+            "K. Hunt": [
+                "week_12"
+            ],
+            "J. Wilkins": [
+                "week_12"
+            ],
+            "C. Beasley": [
+                "week_12"
+            ],
+            "J. White": [
+                "week_12"
+            ],
+            "Jets": [
+                "week_12",
+                "week_13"
+            ],
+            "R. Tannehill": [
+                "week_13"
+            ],
+            "A. Ekeler": [
+                "week_13"
+            ],
+            "C. Kupp": [
+                "week_13"
+            ],
+            "A. Brown": [
+                "week_13"
+            ],
+            "J. Landry": [
+                "week_13"
+            ],
+            "J. Akins": [
+                "week_13",
+                "week_14"
+            ],
+            "C. Carson": [
+                "week_13"
+            ],
+            "K. Cousins": [
+                "week_14"
+            ],
+            "D. Henry": [
+                "week_14"
+            ],
+            "B. Perriman": [
+                "week_14"
+            ],
+            "M. Evans": [
+                "week_14"
+            ],
+            "Eagles": [
+                "week_14"
+            ]
+        }
+    },
+    "JParrot12": {
+        "avg_points": 125.45,
+        "total_points": 1505.44,
+        "num_weeks": 12,
+        "player_usage": {
+            "R. Wilson": [
+                "week_3",
+                "week_9"
+            ],
+            "M. Gordon III": [
+                "week_3"
+            ],
+            "C. Carson\nQ": [
+                "week_3"
+            ],
+            "C. Lamb": [
+                "week_3"
+            ],
+            "J. Edelman": [
+                "week_3"
+            ],
+            "D. Slayton": [
+                "week_3"
+            ],
+            "D. Goedert\nIR": [
+                "week_3"
+            ],
+            "D. Johnson": [
+                "week_3",
+                "week_11",
+                "week_14"
+            ],
+            "Cardinals": [
+                "week_3",
+                "week_9"
+            ],
+            "D. Prescott": [
+                "week_4"
+            ],
+            "A. Jones": [
+                "week_4"
+            ],
+            "K. Drake": [
+                "week_4",
+                "week_13"
+            ],
+            "M. Valdes-Scantling": [
+                "week_4"
+            ],
+            "A. Cooper": [
+                "week_4",
+                "week_5"
+            ],
+            "D. Moore": [
+                "week_4"
+            ],
+            "T. Hockenson": [
+                "week_4"
+            ],
+            "B. Cooks": [
+                "week_4"
+            ],
+            "Colts": [
+                "week_4",
+                "week_5",
+                "week_8"
+            ],
+            "D. Prescott\nO": [
+                "week_5"
+            ],
+            "C. Carson": [
+                "week_5"
+            ],
+            "J. Robinson": [
+                "week_5"
+            ],
+            "K. Bourne": [
+                "week_5",
+                "week_6"
+            ],
+            "R. Anderson": [
+                "week_5",
+                "week_6"
+            ],
+            "H. Henry": [
+                "week_5",
+                "week_12"
+            ],
+            "N. Hines": [
+                "week_5"
+            ],
+            "K. Murray": [
+                "week_6"
+            ],
+            "R. Mostert\nD": [
+                "week_6"
+            ],
+            "M. Davis": [
+                "week_6",
+                "week_11"
+            ],
+            "J. Crowder": [
+                "week_6"
+            ],
+            "T. Fulgham": [
+                "week_6",
+                "week_8",
+                "week_10"
+            ],
+            "J. Smith\nQ": [
+                "week_6"
+            ],
+            "Steelers": [
+                "week_6"
+            ],
+            "A. Rodgers": [
+                "week_7"
+            ],
+            "T. Gurley II": [
+                "week_7"
+            ],
+            "A. Kamara": [
+                "week_7"
+            ],
+            "C. Kirk": [
+                "week_7"
+            ],
+            "T. McLaurin": [
+                "week_7",
+                "week_13"
+            ],
+            "C. Claypool": [
+                "week_7",
+                "week_10",
+                "week_11"
+            ],
+            "R. Tonyan": [
+                "week_7"
+            ],
+            "R. Gage\nQ": [
+                "week_7"
+            ],
+            "Chargers": [
+                "week_7"
+            ],
+            "C. Wentz": [
+                "week_8"
+            ],
+            "J. Williams\nC19": [
+                "week_8"
+            ],
+            "J. Jacobs": [
+                "week_8"
+            ],
+            "M. Evans": [
+                "week_8"
+            ],
+            "T. Boyd": [
+                "week_8"
+            ],
+            "D. Goedert": [
+                "week_8",
+                "week_10",
+                "week_12"
+            ],
+            "R. Jones II": [
+                "week_8"
+            ],
+            "D. Cook": [
+                "week_9",
+                "week_12"
+            ],
+            "D. Johnson\nQ": [
+                "week_9"
+            ],
+            "T. Lockett": [
+                "week_9"
+            ],
+            "C. Beasley": [
+                "week_9"
+            ],
+            "J. Brown": [
+                "week_9"
+            ],
+            "N. Fant\nQ": [
+                "week_9"
+            ],
+            "E. Engram": [
+                "week_9"
+            ],
+            "J. Allen": [
+                "week_10"
+            ],
+            "J. McKissic": [
+                "week_10",
+                "week_11"
+            ],
+            "M. Sanders": [
+                "week_10"
+            ],
+            "J. Brown\nQ": [
+                "week_10"
+            ],
+            "S. Diggs": [
+                "week_10"
+            ],
+            "Jaguars": [
+                "week_10",
+                "week_12"
+            ],
+            "B. Roethlisberger\nQ": [
+                "week_11"
+            ],
+            "T. McLaurin\nQ": [
+                "week_11"
+            ],
+            "E. Ebron": [
+                "week_11",
+                "week_13"
+            ],
+            "J. Smith-Schuster\nQ": [
+                "week_11"
+            ],
+            "Jets": [
+                "week_11",
+                "week_13"
+            ],
+            "J. Herbert": [
+                "week_12"
+            ],
+            "W. Gallman Jr.": [
+                "week_12",
+                "week_13"
+            ],
+            "J. Reynolds": [
+                "week_12"
+            ],
+            "K. Allen": [
+                "week_12"
+            ],
+            "C. Davis": [
+                "week_12",
+                "week_14"
+            ],
+            "G. Minshew II": [
+                "week_13"
+            ],
+            "D. Adams": [
+                "week_13"
+            ],
+            "A. Robinson II": [
+                "week_13"
+            ],
+            "D. Mims": [
+                "week_13"
+            ],
+            "R. Tannehill": [
+                "week_14"
+            ],
+            "D. Montgomery": [
+                "week_14"
+            ],
+            "T. Hill": [
+                "week_14"
+            ],
+            "J. Jefferson": [
+                "week_14"
+            ],
+            "M. Gesicki\nQ": [
+                "week_14"
+            ],
+            "D. Schultz": [
+                "week_14"
+            ],
+            "Bills": [
+                "week_14"
+            ]
+        }
+    }
+}

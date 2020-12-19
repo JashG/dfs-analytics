@@ -1,4 +1,3 @@
-import sys
 import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -49,7 +48,6 @@ def main():
     # 1) Navigate to Login page
     try:
         login_button = driver.find_element_by_css_selector("[data-test-id=registration-link]")
-        print(login_button)
     except NoSuchElementException as e:
         print(e)
         exit(1)
@@ -124,13 +122,11 @@ def main():
         all_team_data = dict()
         # Init object that will store each team's data for the week
         current_week_key = "week_" + str(current_week)
-        print(current_week_key)
         all_team_data[current_week_key] = []
         for team in teams:
             # Create obj to store data for this team
             team_data = dict()
             team_data["name"] = team.find_element_by_class_name("_3ASiVpv9WeTxdZXplZmdEC").text
-            print(team_data["name"])
             # Click team to update table of players
             team.click()
             # Ensure table has updated before proceeding - currently doing this by checking when
