@@ -13,7 +13,7 @@ class Operations:
         self.team_data_path = team_data_path
         self.team_data = self.get_json_from_file(team_data_path)
 
-    def points_per_game(self):
+    def points_per_week(self):
         for week in self.weekly_data:
             week_data = week[list(week.keys())[0]]
             for team in week_data:
@@ -58,7 +58,7 @@ class Operations:
 
         Operations.update_file(self.team_data_path, self.team_data)
 
-    def most_used_players(self):
+    def player_usage(self):
         player_usage = dict()
         for week in self.weekly_data:
             week_number = list(week.keys())[0]
@@ -80,6 +80,34 @@ class Operations:
             self.team_data[team_name]["player_usage"] = player_usage[team_name]
 
         Operations.update_file(self.team_data_path, self.team_data)
+
+    # Assumption: team data per-week is sorted from most to least points
+    def weekly_wins(self):
+        # We'll keep track of two types of wins:
+        # type 1: weekly diff between first and second place
+        # type 2: weekly diff between first and last place
+        for week in self.weekly_data:
+            week_number = list(week.keys())[0]
+            week_data = week[week_number]
+
+            first_place_points = week_data[0]["total_points"]
+            second_place_points = week_data[1]["total_points"]
+            last_place_points = week_data[5]["total_points"]
+
+            if len(week_data) == 6:
+                # For weekly data, the last object in the array will store the league-wide weekly data
+                week_data.append(dict(
+                    type1_win=round(first_place_points - second_place_points, 2),
+                    type2_win=round(first_place_points - last_place_points, 2)
+                ))
+            elif len(week_data) > 6:
+                week_data[len(week_data) - 1] = dict(
+                    type1_win=round(first_place_points - second_place_points, 2),
+                    type2_win=round(first_place_points - last_place_points, 2)
+                )
+
+        # Update weekly data file
+        Operations.update_file(self.weekly_data_path, self.weekly_data)
 
     @staticmethod
     def get_json_from_file(path):
