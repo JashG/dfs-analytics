@@ -1,6 +1,7 @@
 import { Button, Center, Wrap, WrapItem } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import HeaderSection from './HeaderSection';
+import Standings from './Standings';
 
 const tabs = ['Team Overview', 'League Leaders'];
 
@@ -26,10 +27,13 @@ const Home = () => {
   return (
     <div style={{ height: '100%' }}>
       <HeaderSection />
-      <Center>
+      <Center mb="20px">
         <Wrap spacing="25px" justify="center">
           {tabBtns}
         </Wrap>
+      </Center>
+      <Center ml="20px" mr="20px">
+        <Standings />
       </Center>
     </div>
   );
