@@ -18,49 +18,121 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 const Standings = () => {
+  // API Data
   const [teamData, setTeamData] = useState('');
   const [weeklyData, setWeeklyData] = useState('');
   const [fetchingData, setFetchingData] = useState(false);
+
+  // Base start week available in our fetched data
   const [startWeek, setStartWeek] = useState('');
+  // Selected start week from filter in UI
   const [selectedStartWeek, setSelectedStartWeek] = useState('');
+  // Base end week available in our fetched data
   const [endWeek, setEndWeek] = useState('');
+  // Selected end week from filter in UI
   const [selectedEndWeek, setSelectedEndWeek] = useState('');
 
-  useEffect(() => {
+  useEffect(async () => {
     setFetchingData(true);
-    axios
-      .get('http://localhost:5000/db')
-      .then(res => {
-        if (res && res.data) {
-          console.log(res.data);
-          if (res.data.team_data) {
-            setTeamData(res.data.team_data);
-          }
-          if (res.data.weekly_data) {
-            const weeklyData = res.data.weekly_data;
-            setWeeklyData(weeklyData);
-            if (Array.isArray(weeklyData)) {
-              const startWeek = Object.keys(weeklyData[0]).length
-                ? Object.keys(weeklyData[0])[0]
-                : '';
-              setStartWeek(startWeek);
-              setSelectedStartWeek(startWeek);
+    const res = await axios.get('http://localhost:5000/db');
 
-              const endWeek = Object.keys(weeklyData[weeklyData.length - 1])
-                .length
-                ? Object.keys(weeklyData[weeklyData.length - 1])[0]
-                : '';
-              setEndWeek(endWeek);
-              setSelectedEndWeek(endWeek);
-            }
-          }
+    if (res && res.data) {
+      if (res.data.team_data) {
+        setTeamData(res.data.team_data);
+      }
+      if (res.data.weekly_data) {
+        const weeklyData = res.data.weekly_data;
+        setWeeklyData(weeklyData);
+        if (Array.isArray(weeklyData)) {
+          const startWeek = Object.keys(weeklyData[0]).length
+            ? Object.keys(weeklyData[0])[0]
+            : '';
+          setStartWeek(startWeek);
+          setSelectedStartWeek(startWeek);
+
+          const endWeek = Object.keys(weeklyData[weeklyData.length - 1]).length
+            ? Object.keys(weeklyData[weeklyData.length - 1])[0]
+            : '';
+          setEndWeek(endWeek);
+          setSelectedEndWeek(endWeek);
         }
-        setFetchingData(false);
-      })
-      .catch(e => {
-        setFetchingData(false);
-      });
+      }
+    }
+    setFetchingData(false);
   }, []);
+
+  const getDisplayValueFromWeek = week => {
+    if (typeof week !== 'string') {
+      return '';
+    }
+
+    const weekNum =
+      week.split('_').length === 2 ? Number(week.split('_')[1]) : '';
+
+    if (weekNum) {
+      return `Week ${weekNum}`;
+    }
+
+    return '';
+  };
+
+  const fetchFilteredTeamData = async (startWeek, endWeek) => {
+    setFetchingData(true);
+
+    const res = await axios.get(
+      `http://localhost:5000/team-data?start=${startWeek}&end=${endWeek}`
+    );
+
+    if (res && res.data) {
+      // Push each obj into array
+      const teamDataArray = [];
+      Object.keys(res.data).forEach(key => {
+        teamDataArray.push({ [key]: res.data[key] });
+      });
+
+      const sortedTeamData = teamDataArray.sort((a, b) => {
+        const teamA = Object.keys(a).length ? Object.keys(a)[0] : '';
+        const teamB = Object.keys(b).length ? Object.keys(b)[0] : '';
+        if (a[teamA].place > b[teamB].place) return 1;
+        else if (a[teamA].place < b[teamB].place) return -1;
+        return 0;
+      });
+
+      setTeamData(sortedTeamData);
+    }
+    setFetchingData(false);
+  };
+
+  const handleFilterClick = (e, endWeek = false) => {
+    if (e.target && e.target.value) {
+      const selectedWeek = e.target.value;
+      const selectedWeekNum =
+        selectedWeek.split('_').length === 2
+          ? Number(selectedWeek.split('_')[1])
+          : 3;
+      if (!endWeek) {
+        setSelectedStartWeek(selectedWeek);
+
+        const selectedEndWeekNum =
+          selectedEndWeek.split('_').length === 2
+            ? Number(selectedEndWeek.split('_')[1])
+            : '';
+        if (selectedWeekNum > selectedEndWeekNum) {
+          setSelectedEndWeek(selectedWeek);
+          fetchFilteredTeamData(selectedWeekNum, selectedWeekNum);
+        } else {
+          fetchFilteredTeamData(selectedWeekNum, selectedEndWeekNum);
+        }
+      } else {
+        const selectedStartWeekNum =
+          selectedStartWeek.split('_').length === 2
+            ? Number(selectedStartWeek.split('_')[1])
+            : '';
+        setSelectedEndWeek(selectedWeek);
+        fetchFilteredTeamData(selectedStartWeekNum, selectedWeekNum);
+      }
+    }
+  };
 
   const getFilter = () => {
     const startWeekNum =
@@ -71,61 +143,39 @@ const Standings = () => {
       selectedStartWeek.split('_').length === 2
         ? Number(selectedStartWeek.split('_')[1])
         : '';
-    const selectedEndWeekNum =
-      selectedEndWeek.split('_').length === 2
-        ? Number(selectedEndWeek.split('_')[1])
-        : '';
 
     const startWeekOptions = [];
     for (let i = startWeekNum; i <= endWeekNum; i++) {
-      startWeekOptions.push(
-        <option
-          onClick={i => {
-            setSelectedStartWeek(`week_${i}`);
-            if (i > selectedEndWeekNum) {
-              setSelectedEndWeek(`week_${i}`);
-            }
-          }}
-          value={i}
-        >
-          Week {i}
-        </option>
-      );
+      startWeekOptions.push(<option value={`week_${i}`}>Week {i}</option>);
     }
     const endWeekOptions = [];
     for (let i = selectedStartWeekNum; i <= endWeekNum; i++) {
-      endWeekOptions.push(
-        <option
-          onClick={event => {
-            console.log(event);
-            setSelectedEndWeek(`week_${i}`);
-          }}
-          value={i}
-        >
-          Week {i}
-        </option>
-      );
+      endWeekOptions.push(<option value={`week_${i}`}>Week {i}</option>);
     }
 
     return (
-      <Flex alignItems="flex-start" wrap="wrap" maxW="7.5em">
+      <>
         <Select
           variant="filled"
           colorScheme="orange"
-          value={selectedStartWeekNum}
+          width="8em"
+          value={selectedStartWeek}
           placeholder="Start Week"
+          onChange={e => handleFilterClick(e)}
         >
           {startWeekOptions}
         </Select>
         <Select
           variant="filled"
           colorScheme="orange"
-          value={selectedEndWeekNum}
+          width="8em"
+          value={selectedEndWeek}
           placeholder="End Week"
+          onChange={e => handleFilterClick(e, true)}
         >
           {endWeekOptions}
         </Select>
-      </Flex>
+      </>
     );
   };
 
@@ -258,7 +308,7 @@ const Standings = () => {
 
   return (
     <>
-      <div>{getFilter()}</div>
+      <Flex flexWrap="wrap">{getFilter()}</Flex>
       <Table variant="striped">
         <Thead>
           <Tr>

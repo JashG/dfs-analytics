@@ -13,6 +13,11 @@ class Operations:
         self.team_data_path = team_data_path
         self.team_data = self.get_json_from_file(team_data_path)
 
+    def get_filtered_team_data(self, start, end):
+        if 0 < start <= end and end > 0:
+            return self.get_team_data(start, end)
+        return dict()
+
     def points_per_week(self):
         for week in self.weekly_data:
             week_data = week[list(week.keys())[0]]
@@ -22,41 +27,57 @@ class Operations:
                     total_points += round(float(player["points"]), 2)
                 team["total_points"] = round(total_points, 2)
 
-        Operations.update_file(self.weekly_data_path, self.weekly_data)
+        # Operations.update_file(self.weekly_data_path, self.weekly_data)
+        return self.weekly_data
 
-    def avg_points_per_team(self):
-        avg_per_team = dict()
-        for week in self.weekly_data:
-            week_data = week[list(week.keys())[0]]
-            for team in week_data:
-                team_name = team["name"]
-                if team_name in avg_per_team:
-                    team_avg = avg_per_team[team_name]
-                    # Get updated total points
-                    points_this_week = team["total_points"]
-                    updated_total = team_avg["total_points"] + points_this_week
-                    # Get updated avg points
-                    num_weeks = team_avg["num_weeks"] + 1
-                    updated_avg = updated_total / num_weeks
-                    # Update dict
-                    avg_per_team[team_name]["avg_points"] = updated_avg
-                    avg_per_team[team_name]["total_points"] = updated_total
-                    avg_per_team[team_name]["num_weeks"] = num_weeks
-                else:
-                    avg_per_team[team_name] = dict(
-                        avg_points=team["total_points"],
-                        total_points=team["total_points"],
-                        num_weeks=1,
-                    )
+    def get_filtered_team_data(self, start: int = 0, end: int = 0):
+        if 0 < start <= end and end > 0:
+            team_data = self.team_data
+
+            for week in self.weekly_data:
+                week_key = list(week.keys())[0]
+                week_num = int(week_key.split('_')[1])
+
+                if week_num < start or week_num > end:
+                    continue
+
+                week_data = week[week_key]
+
+                for (idx, team) in enumerate(week_data):
+                    team_name = team.get("name", "")
+
+                    if team_name:
+                        team_avg = team_data[team_name]
+
+                        if week_num == start:
+                            team_avg["league_points"] = 0
+                            team_avg["avg_points"] = 0
+                            team_avg["total_points"] = 0
+                            team_avg["num_weeks"] = 0
+
+                        # Get updated total points
+                        points_this_week = team["total_points"]
+                        updated_total = team_avg["total_points"] + points_this_week
+                        # Get updated avg points
+                        num_weeks = team_avg["num_weeks"] + 1
+                        updated_avg = updated_total / num_weeks
+                        # Get updated league points
+                        updated_league_points = team_avg["league_points"] + (12 - (2 * idx))
+                        # Update dict
+                        team_data[team_name]["avg_points"] = round(updated_avg, 2)
+                        team_data[team_name]["total_points"] = round(updated_total, 2)
+                        team_data[team_name]["num_weeks"] = num_weeks
+                        team_data[team_name]["league_points"] = updated_league_points
 
         # Update file with team data
-        for team in self.team_data:
-            team_name = team
-            self.team_data[team_name]["avg_points"] = round(avg_per_team[team_name]["avg_points"], 2)
-            self.team_data[team_name]["total_points"] = round(avg_per_team[team_name]["total_points"], 2)
-            self.team_data[team_name]["num_weeks"] = round(avg_per_team[team_name]["num_weeks"], 2)
-
-        Operations.update_file(self.team_data_path, self.team_data)
+        # for team in self.team_data:
+        #     team_name = team
+        #     self.team_data[team_name]["avg_points"] = round(avg_per_team[team_name]["avg_points"], 2)
+        #     self.team_data[team_name]["total_points"] = round(avg_per_team[team_name]["total_points"], 2)
+        #     self.team_data[team_name]["num_weeks"] = round(avg_per_team[team_name]["num_weeks"], 2)
+        #
+        # Operations.update_file(self.team_data_path, self.team_data)
+        return team_data
 
     def player_usage(self):
         player_usage = dict()
@@ -75,11 +96,11 @@ class Operations:
                         player_usage[team_name][player["name"]].append(week_number)
 
         # Update file with team data
-        for team in self.team_data:
-            team_name = team
-            self.team_data[team_name]["player_usage"] = player_usage[team_name]
-
-        Operations.update_file(self.team_data_path, self.team_data)
+        # for team in self.team_data:
+        #     team_name = team
+        #     self.team_data[team_name]["player_usage"] = player_usage[team_name]
+        # Operations.update_file(self.team_data_path, self.team_data)
+        return player_usage
 
     # Assumption: team data per-week is sorted from most to least points
     def weekly_wins(self):
@@ -107,7 +128,7 @@ class Operations:
                 )
 
         # Update weekly data file
-        Operations.update_file(self.weekly_data_path, self.weekly_data)
+        # Operations.update_file(self.weekly_data_path, self.weekly_data)
 
     @staticmethod
     def get_json_from_file(path):

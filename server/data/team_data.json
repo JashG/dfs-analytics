@@ -5,6 +5,16 @@
         "avg_points": 143.67,
         "total_points": 1724.02,
         "num_weeks": 12,
+        "season_high": {
+            "points": 178,
+            "week": "week_7",
+            "place": 3
+        },
+        "season_low": {
+            "points": 97.32,
+            "week": "week_8",
+            "place": 5
+        },
         "player_usage": {
             "D. Prescott": [
                 "week_3"
@@ -294,6 +304,16 @@
         "avg_points": 141.4,
         "total_points": 1696.84,
         "num_weeks": 12,
+        "season_high": {
+            "points": 191.4,
+            "week": "week_7",
+            "place": 1
+        },
+        "season_low": {
+            "points": 103.18,
+            "week": "week_12",
+            "place": 6
+        },
         "player_usage": {
             "A. Rodgers": [
                 "week_3"
@@ -581,6 +601,16 @@
         "avg_points": 130.83,
         "total_points": 1569.92,
         "num_weeks": 12,
+        "season_high": {
+            "points": 160.6,
+            "week": "week_7",
+            "place": 4
+        },
+        "season_low": {
+            "points": 94.74,
+            "week": "week_8",
+            "place": 6
+        },
         "player_usage": {
             "D. Prescott": [
                 "week_3"
@@ -860,6 +890,16 @@
         "avg_points": 131.23,
         "total_points": 1574.76,
         "num_weeks": 12,
+        "season_high": {
+            "points": 173.88,
+            "week": "week_14",
+            "place": 1
+        },
+        "season_low": {
+            "points": 81.38,
+            "week": "week_10",
+            "place": 6
+        },
         "player_usage": {
             "A. Rodgers": [
                 "week_3"
@@ -1135,6 +1175,16 @@
         "avg_points": 125.86,
         "total_points": 1510.28,
         "num_weeks": 12,
+        "season_high": {
+            "points": 178.6,
+            "week": "week_7",
+            "place": 2
+        },
+        "season_low": {
+            "points": 95.64,
+            "week": "week_8",
+            "place": 6
+        },
         "player_usage": {
             "N. Mullens": [
                 "week_3"
@@ -1414,6 +1464,16 @@
         "avg_points": 125.45,
         "total_points": 1505.44,
         "num_weeks": 12,
+        "season_high": {
+            "points": 140.66,
+            "week": "week_10",
+            "place": 2
+        },
+        "season_low": {
+            "points": 99.6,
+            "week": "week_3",
+            "place": 6
+        },
         "player_usage": {
             "R. Wilson": [
                 "week_3",
