@@ -12,6 +12,7 @@ const Home = () => {
     return (
       <WrapItem>
         <Button
+          key={tab}
           variant="tab"
           bg={activeTab === tab ? 'orange.400' : ''}
           onClick={() => {
@@ -27,7 +28,7 @@ const Home = () => {
   return (
     <div style={{ height: '100%' }}>
       <HeaderSection />
-      <Center mb="20px">
+      <Center mb="40px">
         <Wrap spacing="25px" justify="center">
           {tabBtns}
         </Wrap>
