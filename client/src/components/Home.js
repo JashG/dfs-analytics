@@ -1,4 +1,4 @@
-import { Button, Center, Wrap, WrapItem } from '@chakra-ui/react';
+import { Button, Center, Flex, Wrap, WrapItem } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import HeaderSection from './HeaderSection';
 import Standings from './Standings';
@@ -33,9 +33,9 @@ const Home = () => {
           {tabBtns}
         </Wrap>
       </Center>
-      <Center ml="20px" mr="20px">
+      <Flex flexDir="column" ml="20px" mr="20px">
         <Standings />
-      </Center>
+      </Flex>
     </div>
   );
 };

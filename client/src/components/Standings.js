@@ -1,5 +1,7 @@
 import {
+  Flex,
   Progress,
+  Select,
   Table,
   Tag,
   Tbody,
@@ -19,6 +21,10 @@ const Standings = () => {
   const [teamData, setTeamData] = useState('');
   const [weeklyData, setWeeklyData] = useState('');
   const [fetchingData, setFetchingData] = useState(false);
+  const [startWeek, setStartWeek] = useState('');
+  const [selectedStartWeek, setSelectedStartWeek] = useState('');
+  const [endWeek, setEndWeek] = useState('');
+  const [selectedEndWeek, setSelectedEndWeek] = useState('');
 
   useEffect(() => {
     setFetchingData(true);
@@ -31,7 +37,22 @@ const Standings = () => {
             setTeamData(res.data.team_data);
           }
           if (res.data.weekly_data) {
-            setWeeklyData(res.data.weekly_data);
+            const weeklyData = res.data.weekly_data;
+            setWeeklyData(weeklyData);
+            if (Array.isArray(weeklyData)) {
+              const startWeek = Object.keys(weeklyData[0]).length
+                ? Object.keys(weeklyData[0])[0]
+                : '';
+              setStartWeek(startWeek);
+              setSelectedStartWeek(startWeek);
+
+              const endWeek = Object.keys(weeklyData[weeklyData.length - 1])
+                .length
+                ? Object.keys(weeklyData[weeklyData.length - 1])[0]
+                : '';
+              setEndWeek(endWeek);
+              setSelectedEndWeek(endWeek);
+            }
           }
         }
         setFetchingData(false);
@@ -40,6 +61,73 @@ const Standings = () => {
         setFetchingData(false);
       });
   }, []);
+
+  const getFilter = () => {
+    const startWeekNum =
+      startWeek.split('_').length === 2 ? Number(startWeek.split('_')[1]) : '';
+    const endWeekNum =
+      endWeek.split('_').length === 2 ? Number(endWeek.split('_')[1]) : '';
+    const selectedStartWeekNum =
+      selectedStartWeek.split('_').length === 2
+        ? Number(selectedStartWeek.split('_')[1])
+        : '';
+    const selectedEndWeekNum =
+      selectedEndWeek.split('_').length === 2
+        ? Number(selectedEndWeek.split('_')[1])
+        : '';
+
+    const startWeekOptions = [];
+    for (let i = startWeekNum; i <= endWeekNum; i++) {
+      startWeekOptions.push(
+        <option
+          onClick={i => {
+            setSelectedStartWeek(`week_${i}`);
+            if (i > selectedEndWeekNum) {
+              setSelectedEndWeek(`week_${i}`);
+            }
+          }}
+          value={i}
+        >
+          Week {i}
+        </option>
+      );
+    }
+    const endWeekOptions = [];
+    for (let i = selectedStartWeekNum; i <= endWeekNum; i++) {
+      endWeekOptions.push(
+        <option
+          onClick={event => {
+            console.log(event);
+            setSelectedEndWeek(`week_${i}`);
+          }}
+          value={i}
+        >
+          Week {i}
+        </option>
+      );
+    }
+
+    return (
+      <Flex alignItems="flex-start" wrap="wrap" maxW="7.5em">
+        <Select
+          variant="filled"
+          colorScheme="orange"
+          value={selectedStartWeekNum}
+          placeholder="Start Week"
+        >
+          {startWeekOptions}
+        </Select>
+        <Select
+          variant="filled"
+          colorScheme="orange"
+          value={selectedEndWeekNum}
+          placeholder="End Week"
+        >
+          {endWeekOptions}
+        </Select>
+      </Flex>
+    );
+  };
 
   const getMostUsedPlayers = playerUsage => {
     let mostUsedPlayers = [];
@@ -142,7 +230,7 @@ const Standings = () => {
               <Td>{teamObj.avg_points}</Td>
               {/* <Td>{getMostUsedPlayers(teamObj.player_usage)}</Td> */}
               <Td _hover={{ cursor: 'pointer' }}>
-                <Tooltip label={`Place: ${seasonLow.placement}`}>
+                <Tooltip label={`Place: ${seasonHigh.placement}`}>
                   <Tag size="md" colorScheme="green" textAlign="center">
                     <b>{`${seasonHigh.points} `}</b>
                     <Text ml="4px">{`(${seasonHigh.week
@@ -170,6 +258,7 @@ const Standings = () => {
 
   return (
     <>
+      <div>{getFilter()}</div>
       <Table variant="striped">
         <Thead>
           <Tr>
