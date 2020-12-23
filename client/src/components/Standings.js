@@ -13,7 +13,7 @@ import {
   Tooltip,
   Tr,
   Wrap,
-  WrapItem,
+  WrapItem
 } from '@chakra-ui/react';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
@@ -61,21 +61,6 @@ const Standings = () => {
     }
     setFetchingData(false);
   }, []);
-
-  const getDisplayValueFromWeek = week => {
-    if (typeof week !== 'string') {
-      return '';
-    }
-
-    const weekNum =
-      week.split('_').length === 2 ? Number(week.split('_')[1]) : '';
-
-    if (weekNum) {
-      return `Week ${weekNum}`;
-    }
-
-    return '';
-  };
 
   const fetchFilteredTeamData = async (startWeek, endWeek) => {
     setFetchingData(true);

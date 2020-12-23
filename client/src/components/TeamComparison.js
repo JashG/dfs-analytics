@@ -57,7 +57,7 @@ const TeamComparison = () => {
     return (
       <Select
         size="lg"
-        variant="unstyled"
+        variant="filled"
         value={isTeamOne ? teamOne : teamTwo}
         placeholder="Select Team"
         onChange={e => handleTeamSelection(e, isTeamOne)}
@@ -82,10 +82,9 @@ const TeamComparison = () => {
         <Flex
           m="10px"
           p="8px"
-          w={{ base: '100%', sm: '48%' }}
-          minWidth="400px"
-          // bgColor="gray.600"
-          height="450px"
+          w={{ base: '100%', md: '48%' }}
+          minHeight="400px"
+          // maxHeight="800px"
           flexDir="column"
         >
           {getTeamSelection()}
@@ -99,10 +98,9 @@ const TeamComparison = () => {
         <Flex
           m="10px"
           p="8px"
-          w={{ base: '100%', sm: '48%' }}
-          minWidth="400px"
-          bgColor="gray.600"
-          height="450px"
+          w={{ base: '100%', md: '48%' }}
+          minHeight="400px"
+          // maxHeight="800px"
           flexDir="column"
         >
           {getTeamSelection(false)}
@@ -111,6 +109,7 @@ const TeamComparison = () => {
             teamData={teamTwoData}
             isLoading={loadingTeamTwoData}
             opposingTeamData={teamOneData}
+            alignData="left"
           />
         </Flex>
       </Flex>

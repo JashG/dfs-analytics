@@ -8,6 +8,7 @@ const TeamSnapshotWrapper = ({
   teamData,
   isLoading,
   opposingTeamData,
+  alignData = 'right',
 }) => {
   const placeholder = (text, showIcon = true) => {
     return (
@@ -28,6 +29,7 @@ const TeamSnapshotWrapper = ({
           selectedTeam={selectedTeam}
           teamData={teamData}
           opposingTeamData={opposingTeamData}
+          alignData={alignData}
         />
       );
     } else {
