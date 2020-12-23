@@ -8,10 +8,20 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/weekly-data")
-def weekly_data():
-    with open("data/weekly_data.json") as file:
-        return jsonify(json.load(file))
+# @app.route("/weekly-data")
+# def weekly_data():
+#     with open("data/weekly_data.json") as file:
+#         return jsonify(json.load(file))
+
+@app.route("/team-data-2", methods=['GET'])
+def get_team_data():
+    if request.args.get('team_name'):
+        ops = Operations()
+        team_info = ops.get_team_data(request.args.get('team_name'))
+
+        return jsonify(team_info)
+
+    return jsonify(dict())
 
 
 @app.route("/team-data", methods=['GET'])

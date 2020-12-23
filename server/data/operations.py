@@ -1,4 +1,5 @@
 import json
+from statistics import stdev
 
 
 # TODO: Look into more pythonic way to do all the nested looping
@@ -12,11 +13,6 @@ class Operations:
         self.weekly_data = self.get_json_from_file(weekly_data_path)
         self.team_data_path = team_data_path
         self.team_data = self.get_json_from_file(team_data_path)
-
-    def get_filtered_team_data(self, start, end):
-        if 0 < start <= end and end > 0:
-            return self.get_team_data(start, end)
-        return dict()
 
     def points_per_week(self):
         for week in self.weekly_data:
@@ -79,6 +75,75 @@ class Operations:
         # Operations.update_file(self.team_data_path, self.team_data)
         return team_data
 
+    def get_team_data(self, team_name):
+        team_data = dict()
+
+        if not team_name:
+            return team_data
+
+        # Data we will keep track of
+        num_wins = 0
+        num_top_2 = 0
+        std_dev = 0
+        weekly_points = []
+        big_games = 0
+        big_game_players = dict()
+        donuts = 0
+        donut_players = dict()
+
+        for week in self.weekly_data:
+            week_key = list(week.keys())[0]
+            week_data = week[week_key]
+
+            # Num wins, num top-2 finishes
+            if week_data[0]["name"] == team_name:
+                num_wins = num_wins + 1
+                num_top_2 = num_top_2 + 1
+            elif week_data[1]["name"] == team_name:
+                num_top_2 = num_top_2 + 1
+
+            # Get desired team's data for this week
+            desired_team = [tm for tm in week_data if tm.get("name") == team_name][0]
+            lineup = desired_team["lineup"]
+
+            # Big games
+            big_games_in_lineup = [plr for plr in lineup if float(plr["points"]) > 30.00]
+            big_games += len(big_games_in_lineup)
+            big_game_players[week_key] = big_games_in_lineup
+
+            # Donuts
+            donuts_in_lineup = [plr for plr in lineup if float(plr["points"]) <= 0.00]
+            donuts += len(donuts_in_lineup)
+            donut_players[week_key] = donuts_in_lineup
+
+            # Keep track of weekly points so we can calculate stdev
+            weekly_points.append(desired_team["total_points"])
+
+        # Calculate stdev
+        std_dev = round(stdev(weekly_points), 2)
+
+        # Lastly, get team img path to display in UI
+        team_img = Operations.get_team_img(team_name)
+
+        # Create dict out of new data we've collected
+        new_team_data = dict(
+            img=team_img,
+            num_wins=num_wins,
+            num_top_2=num_top_2,
+            std_dev=std_dev,
+            num_big_games=big_games,
+            big_game_players=big_game_players,
+            num_donuts=donuts,
+            donut_players=donut_players
+        )
+
+        # Add base, season-long team data that we've already stored to this response
+        base_team_data = self.team_data[team_name]
+
+        team_data = {**new_team_data, **base_team_data}
+
+        return team_data
+
     def player_usage(self):
         player_usage = dict()
         for week in self.weekly_data:
@@ -139,3 +204,10 @@ class Operations:
     def update_file(path, content):
         with open(path, "w") as file:
             file.write(json.dumps(content, indent=4))
+
+    @staticmethod
+    def get_team_img(team_name):
+        if team_name == 'McKrank':
+            return 'kraken.jpg'
+        else:
+            return ''

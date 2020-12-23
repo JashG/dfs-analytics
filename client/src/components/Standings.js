@@ -13,7 +13,7 @@ import {
   Tooltip,
   Tr,
   Wrap,
-  WrapItem
+  WrapItem,
 } from '@chakra-ui/react';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
@@ -159,7 +159,6 @@ const Standings = () => {
         <Center mr="8px">Start Week:</Center>
         <Select
           variant="filled"
-          colorScheme="orange"
           mr="8px"
           width="8em"
           value={selectedStartWeek}
