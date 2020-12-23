@@ -22,6 +22,16 @@ const theme = extendTheme({
         },
       },
     },
+    Heading: {
+      variants: {
+        tableTitle: {
+          borderLeft: '6px solid',
+          // Need to explicitly use color property so Chakra recognizes theme color
+          borderLeftColor: 'blue.300',
+          paddingLeft: '20px',
+        },
+      },
+    },
   },
   fonts: {
     body: 'Nunito, Roboto, Helvetica Neue, sans-serif',

@@ -209,5 +209,15 @@ class Operations:
     def get_team_img(team_name):
         if team_name == 'McKrank':
             return 'kraken.jpg'
+        elif team_name == 'JParrot12':
+            return 'parrot.jpg'
+        elif team_name == 'rileyc98':
+            return 'jalenhurts.jpg'
+        elif team_name == 'dhdrewhouston':
+            return 'romo.jpg'
+        elif team_name == 'JashG98':
+            return 'brady.jpg'
+        elif team_name == 'paynetrain37':
+            return 'paynetrain.jpg'
         else:
             return ''
