@@ -1,7 +1,8 @@
 import {
+  Center,
   Flex,
-  Progress,
   Select,
+  Spinner,
   Table,
   Tag,
   Tbody,
@@ -12,7 +13,7 @@ import {
   Tooltip,
   Tr,
   Wrap,
-  WrapItem,
+  WrapItem
 } from '@chakra-ui/react';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
@@ -154,10 +155,12 @@ const Standings = () => {
     }
 
     return (
-      <>
+      <Flex flexDir="row" mb="20px">
+        <Center mr="8px">Start Week:</Center>
         <Select
           variant="filled"
           colorScheme="orange"
+          mr="8px"
           width="8em"
           value={selectedStartWeek}
           placeholder="Start Week"
@@ -165,9 +168,11 @@ const Standings = () => {
         >
           {startWeekOptions}
         </Select>
+        <Center mr="8px">End Week:</Center>
         <Select
           variant="filled"
           colorScheme="orange"
+          mr="8px"
           width="8em"
           value={selectedEndWeek}
           placeholder="End Week"
@@ -175,7 +180,7 @@ const Standings = () => {
         >
           {endWeekOptions}
         </Select>
-      </>
+      </Flex>
     );
   };
 
@@ -276,6 +281,7 @@ const Standings = () => {
             <Tr key={teamName}>
               <Td>{teamObj.place}</Td>
               <Td>{teamName}</Td>
+              <Td>{teamObj.league_points}</Td>
               <Td>{teamObj.total_points}</Td>
               <Td>{teamObj.avg_points}</Td>
               {/* <Td>{getMostUsedPlayers(teamObj.player_usage)}</Td> */}
@@ -314,6 +320,7 @@ const Standings = () => {
           <Tr>
             <Th>Place</Th>
             <Th>Team</Th>
+            <Th>Score</Th>
             <Th>Total Points</Th>
             <Th>Avg. Points</Th>
             {/* <Th>Most Used Players</Th> */}
@@ -321,13 +328,7 @@ const Standings = () => {
             <Th>Season Low</Th>
           </Tr>
         </Thead>
-        <Tbody>
-          {fetchingData ? (
-            <Progress size="sm" isIndeterminate />
-          ) : (
-            populateTable()
-          )}
-        </Tbody>
+        <Tbody>{fetchingData ? <Spinner size="xl" /> : populateTable()}</Tbody>
       </Table>
     </>
   );

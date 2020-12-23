@@ -1,7 +1,8 @@
-import { Button, Center, Flex, Wrap, WrapItem } from '@chakra-ui/react';
+import { Button, Flex, Heading, WrapItem } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import HeaderSection from './HeaderSection';
 import Standings from './Standings';
+import TeamComparison from './TeamComparison';
 
 const tabs = ['Team Overview', 'League Leaders'];
 
@@ -28,13 +29,15 @@ const Home = () => {
   return (
     <div style={{ height: '100%' }}>
       <HeaderSection />
-      <Center mb="40px">
-        <Wrap spacing="25px" justify="center">
-          {tabBtns}
-        </Wrap>
-      </Center>
       <Flex flexDir="column" ml="20px" mr="20px">
+        <Heading as="h2" m="0.5em 0">
+          Team Overview
+        </Heading>
         <Standings />
+        <Heading as="h2" mt="1.5em" mb="0.5em">
+          Team Comparison Tool
+        </Heading>
+        <TeamComparison />
       </Flex>
     </div>
   );
