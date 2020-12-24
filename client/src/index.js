@@ -8,9 +8,6 @@ const theme = extendTheme({
   config: {
     initialColorMode: 'dark',
   },
-  styles: {
-    global: {},
-  },
   components: {
     Button: {
       variants: {

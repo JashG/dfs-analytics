@@ -141,23 +141,25 @@ const Standings = () => {
 
     return (
       <Flex flexDir="row" mb="20px">
-        <Center mr="8px">Start Week:</Center>
+        <Center>Start Week:</Center>
         <Select
           variant="filled"
-          mr="8px"
-          width="8em"
+          mr="15px"
+          ml="15px"
+          width="9em"
           value={selectedStartWeek}
           placeholder="Start Week"
           onChange={e => handleFilterClick(e)}
         >
           {startWeekOptions}
         </Select>
-        <Center mr="8px">End Week:</Center>
+        <Center>End Week:</Center>
         <Select
           variant="filled"
           colorScheme="orange"
-          mr="8px"
-          width="8em"
+          mr="15px"
+          ml="15px"
+          width="9em"
           value={selectedEndWeek}
           placeholder="End Week"
           onChange={e => handleFilterClick(e, true)}
@@ -197,12 +199,7 @@ const Standings = () => {
         {mostUsedPlayers.map(player => {
           return (
             <WrapItem>
-              <Tag
-                size="md"
-                key={playerUsage[player]}
-                variant="solid"
-                colorScheme="orange"
-              >
+              <Tag size="md" key={playerUsage[player]} variant="solid">
                 {`${player.name} (${player.weeksPlayed.length} times)`}
               </Tag>
             </WrapItem>
