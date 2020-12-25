@@ -1,4 +1,5 @@
 import json
+from heapq import nlargest
 from statistics import stdev
 
 
@@ -90,6 +91,10 @@ class Operations:
         big_game_players = dict()
         donuts = 0
         donut_players = dict()
+        # Total points contributed by top player each week
+        top_player_points = 0
+        # Total points contributed by top 3 players each week
+        top_players_points = 0
 
         for week in self.weekly_data:
             week_key = list(week.keys())[0]
@@ -105,6 +110,19 @@ class Operations:
             # Get desired team's data for this week
             desired_team = [tm for tm in week_data if tm.get("name") == team_name][0]
             lineup = desired_team["lineup"]
+
+            # Get number of points contributed by this team's top 3 players for the week
+            # First, add each player's point total to array
+            all_points = []
+            for playerObj in lineup:
+                all_points.append(float(playerObj["points"]))
+            # Get 3 largest point totals
+            all_points = nlargest(3, all_points)
+            # Keep track separately of points contributed by top player
+            top_player_points += all_points[0]
+            # Add the three values to our running total
+            for point_val in all_points:
+                top_players_points += point_val
 
             # Big games
             big_games_in_lineup = [plr for plr in lineup if float(plr["points"]) > 30.00]
@@ -139,6 +157,11 @@ class Operations:
 
         # Add base, season-long team data that we've already stored to this response
         base_team_data = self.team_data[team_name]
+
+        # Calculate percentage of team's points that came from top player
+        base_team_data["top_player_share"] = round(top_player_points / base_team_data["total_points"], 2)
+        # Calculate percentage of team's points that came from top 3 players
+        base_team_data["top_players_share"] = round(top_players_points / base_team_data["total_points"], 2)
 
         team_data = {**new_team_data, **base_team_data}
 

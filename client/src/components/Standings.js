@@ -143,6 +143,7 @@ const Standings = () => {
       <Flex flexDir="row" mb="20px">
         <Center>Start Week:</Center>
         <Select
+          key="startWeek"
           variant="filled"
           mr="15px"
           ml="15px"
@@ -155,6 +156,7 @@ const Standings = () => {
         </Select>
         <Center>End Week:</Center>
         <Select
+          key="endWeek"
           variant="filled"
           colorScheme="orange"
           mr="15px"

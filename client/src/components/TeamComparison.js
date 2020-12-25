@@ -82,7 +82,7 @@ const TeamComparison = () => {
         <Flex
           m="10px"
           p="8px"
-          w={{ base: '100%', md: '48%' }}
+          w={{ base: '100%', md: '45%' }}
           minHeight="400px"
           // maxHeight="800px"
           flexDir="column"

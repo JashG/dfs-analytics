@@ -1,4 +1,4 @@
-import { CheckCircleIcon, ViewIcon } from '@chakra-ui/icons';
+import { CheckCircleIcon, QuestionIcon, ViewIcon } from '@chakra-ui/icons';
 import {
   Avatar,
   Flex,
@@ -67,6 +67,31 @@ const TeamSnapshot = ({
     );
   };
 
+  const getPopover = (title, header, content) => {
+    return (
+      <Popover>
+        <PopoverTrigger>
+          <Text
+            color="blue.300"
+            fontSize={{ sm: '1em', lg: '1.15em' }}
+            mr="8px"
+            _hover={{ cursor: 'pointer', textDecoration: 'underline' }}
+          >
+            {title}
+          </Text>
+        </PopoverTrigger>
+        <Portal>
+          <PopoverContent>
+            <PopoverArrow />
+            <PopoverHeader>{header}</PopoverHeader>
+            <PopoverCloseButton />
+            <PopoverBody>{content}</PopoverBody>
+          </PopoverContent>
+        </Portal>
+      </Popover>
+    );
+  };
+
   const getIndividualGamesPopover = (title, popoverHeader, weeklyGames) => {
     // Array of JSX elements, each representing a week where there are games to display
     const popoverContent = [];
@@ -98,26 +123,19 @@ const TeamSnapshot = ({
         justifyContent={alignData === 'right' ? 'flex-end' : 'flex-start'}
       >
         <ViewIcon mr="8px" />
-        <Popover>
-          <PopoverTrigger>
-            <Text
-              color="blue.300"
-              fontSize={{ sm: '1em', lg: '1.15em' }}
-              mr="8px"
-              _hover={{ cursor: 'pointer', textDecoration: 'underline' }}
-            >
-              {title}
-            </Text>
-          </PopoverTrigger>
-          <Portal>
-            <PopoverContent>
-              <PopoverArrow />
-              <PopoverHeader>{popoverHeader}</PopoverHeader>
-              <PopoverCloseButton />
-              <PopoverBody>{popoverContent}</PopoverBody>
-            </PopoverContent>
-          </Portal>
-        </Popover>
+        {getPopover(title, popoverHeader, popoverContent)}
+      </Flex>
+    );
+  };
+
+  const getInformationalPopover = (title, popoverHeader, content) => {
+    return (
+      <Flex
+        alignItems="center"
+        justifyContent={alignData === 'right' ? 'flex-end' : 'flex-start'}
+      >
+        <QuestionIcon mr="8px" />
+        {getPopover(title, popoverHeader, content)}
       </Flex>
     );
   };
@@ -268,19 +286,6 @@ const TeamSnapshot = ({
         dataPoints.push(getDataPoint('Top 2 finishes', numTop2, 'num_top_2'));
       }
 
-      const consistency = teamData.std_dev;
-      if (consistency) {
-        dataPoints.push(
-          getDataPoint(
-            'Consistency',
-            consistency,
-            'std_dev',
-            'std. deviation',
-            true
-          )
-        );
-      }
-
       const numBigGames = teamData.num_big_games;
       if (numBigGames) {
         const viewBigGames = getIndividualGamesPopover(
@@ -317,6 +322,63 @@ const TeamSnapshot = ({
             '<= 0 point games',
             true,
             viewDonuts
+          )
+        );
+      }
+
+      const topPlayerShare = teamData.top_player_share;
+      if (topPlayerShare) {
+        const dataExplanation = getInformationalPopover(
+          'What is this?',
+          'Top Players Share',
+          "Percentage of team's weekly points contributed by top scorer"
+        );
+        dataPoints.push(
+          getDataPoint(
+            'Top Player Share',
+            topPlayerShare,
+            'top_player_share',
+            '',
+            false,
+            dataExplanation
+          )
+        );
+      }
+
+      const topPlayersShare = teamData.top_players_share;
+      if (topPlayerShare) {
+        const dataExplanation = getInformationalPopover(
+          'What is this?',
+          'Top 3 Players Share',
+          "Percentage of team's weekly points contributed by top 3 scorers"
+        );
+        dataPoints.push(
+          getDataPoint(
+            'Top 3 Players Share',
+            topPlayersShare,
+            'top_players_share',
+            '',
+            false,
+            dataExplanation
+          )
+        );
+      }
+
+      const consistency = teamData.std_dev;
+      if (consistency) {
+        const dataExplanation = getInformationalPopover(
+          'What is this?',
+          'Consistency',
+          "Standard deviation of team's weekly points"
+        );
+        dataPoints.push(
+          getDataPoint(
+            'Consistency',
+            consistency,
+            'std_dev',
+            '',
+            true,
+            dataExplanation
           )
         );
       }
