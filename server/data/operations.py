@@ -98,8 +98,10 @@ class Operations:
         donut_players = dict()
         # Players < 5k who scored >= 20
         num_booms = 0
+        boom_players = dict()
         # Players > 6k who scored < 10
         num_busts = 0
+        bust_players = dict()
         # Total points contributed by top player each week
         top_player_points = 0
         # Total points contributed by top 3 players each week
@@ -129,7 +131,9 @@ class Operations:
             all_points = []
             all_ownership = []
             weekly_booms = 0
+            boom_players[week_key] = []
             weekly_busts = 0
+            bust_players[week_key] = []
             for playerObj in lineup:
                 # Add each player's point total to array
                 all_points.append(float(playerObj["points"]))
@@ -138,8 +142,10 @@ class Operations:
                 # Keep track of weekly booms and busts
                 salary = playerObj["salary"]
                 if int(salary[1]) < 5 and float(playerObj["points"]) >= 20.0:
+                    boom_players[week_key].append(playerObj)
                     weekly_booms += 1
                 elif int(salary[1]) >= 6 and float(playerObj["points"]) < 10.0:
+                    bust_players[week_key].append(playerObj)
                     weekly_busts += 1
 
             # Get players that were only owned by this team
@@ -190,7 +196,9 @@ class Operations:
             donut_players=donut_players,
             num_unique_plays=num_unique_plays,
             num_booms=num_booms,
-            num_busts=num_busts
+            boom_players=boom_players,
+            num_busts=num_busts,
+            bust_players=bust_players
         )
 
         # Add base, season-long team data that we've already stored to this response

@@ -390,38 +390,48 @@ const TeamSnapshot = ({
 
       const numBooms = teamData.num_booms;
       if (numBooms) {
-        const dataExplanation = getInformationalPopover(
-          'What is this?',
-          'Cheap Explosions',
-          'Players who cost < 5k who scored at least 20 points'
+        // const dataExplanation = getInformationalPopover(
+        //   'What is this?',
+        //   'Cheap Explosions',
+        //   'Players who cost < 5k who scored at least 20 points'
+        // );
+        const viewBooms = getIndividualGamesPopover(
+          'View Booms',
+          'Cheap Booms',
+          teamData.boom_players
         );
         dataPoints.push(
           getDataPoint(
-            'Cheap Explosions',
+            'Cheap Booms',
             numBooms,
             'num_booms',
-            '',
+            '< 5k salary, >= 20 pts',
             false,
-            dataExplanation
+            viewBooms
           )
         );
       }
 
       const numBusts = teamData.num_busts;
       if (numBusts) {
-        const dataExplanation = getInformationalPopover(
-          'What is this?',
+        // const dataExplanation = getInformationalPopover(
+        //   'What is this?',
+        //   'Expensive Busts',
+        //   'Players who cost >= 6k who scored single-digit points'
+        // );
+        const viewBusts = getIndividualGamesPopover(
+          'View Busts',
           'Expensive Busts',
-          'Players who cost >= 6k who scored single-digit points'
+          teamData.bust_players
         );
         dataPoints.push(
           getDataPoint(
             'Expensive Busts',
             numBusts,
             'num_busts',
-            '',
+            '>= 6k salary, < 10 pts',
             true,
-            dataExplanation
+            viewBusts
           )
         );
       }
