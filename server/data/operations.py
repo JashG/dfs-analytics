@@ -84,17 +84,28 @@ class Operations:
 
         # Data we will keep track of
         num_wins = 0
+        # First or second place finishes
         num_top_2 = 0
+        # Third of fourth place finishes
+        num_top_4 = 0
+        # Fifth of sixth place finishes
+        num_top_6 = 0
         std_dev = 0
         weekly_points = []
         big_games = 0
         big_game_players = dict()
         donuts = 0
         donut_players = dict()
+        # Players < 5k who scored >= 20
+        num_booms = 0
+        # Players > 6k who scored < 10
+        num_busts = 0
         # Total points contributed by top player each week
         top_player_points = 0
         # Total points contributed by top 3 players each week
         top_players_points = 0
+        # Total unique plays by team
+        num_unique_plays = 0
 
         for week in self.weekly_data:
             week_key = list(week.keys())[0]
@@ -106,16 +117,38 @@ class Operations:
                 num_top_2 = num_top_2 + 1
             elif week_data[1]["name"] == team_name:
                 num_top_2 = num_top_2 + 1
+            elif week_data[2]["name"] == team_name or week_data[3]["name"] == team_name:
+                num_top_4 = num_top_4 + 1
+            elif week_data[4]["name"] == team_name or week_data[5]["name"] == team_name:
+                num_top_6 = num_top_6 + 1
 
             # Get desired team's data for this week
             desired_team = [tm for tm in week_data if tm.get("name") == team_name][0]
             lineup = desired_team["lineup"]
 
-            # Get number of points contributed by this team's top 3 players for the week
-            # First, add each player's point total to array
             all_points = []
+            all_ownership = []
+            weekly_booms = 0
+            weekly_busts = 0
             for playerObj in lineup:
+                # Add each player's point total to array
                 all_points.append(float(playerObj["points"]))
+                # Add each player's ownership total to array
+                all_ownership.append((playerObj["owned"]))
+                # Keep track of weekly booms and busts
+                salary = playerObj["salary"]
+                if int(salary[1]) < 5 and float(playerObj["points"]) >= 20.0:
+                    weekly_booms += 1
+                elif int(salary[1]) >= 6 and float(playerObj["points"]) < 10.0:
+                    weekly_busts += 1
+
+            # Get players that were only owned by this team
+            num_unique_plays += all_ownership.count("16.7%")
+            # Append to our weekly booms and busts
+            num_booms += weekly_booms
+            num_busts += weekly_busts
+
+            # Get number of points contributed by this team's top 3 players for the week
             # Get 3 largest point totals
             all_points = nlargest(3, all_points)
             # Keep track separately of points contributed by top player
@@ -148,11 +181,16 @@ class Operations:
             img=team_img,
             num_wins=num_wins,
             num_top_2=num_top_2,
+            num_top_4=num_top_4,
+            num_top_6=num_top_6,
             std_dev=std_dev,
             num_big_games=big_games,
             big_game_players=big_game_players,
             num_donuts=donuts,
-            donut_players=donut_players
+            donut_players=donut_players,
+            num_unique_plays=num_unique_plays,
+            num_booms=num_booms,
+            num_busts=num_busts
         )
 
         # Add base, season-long team data that we've already stored to this response

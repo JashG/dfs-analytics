@@ -283,7 +283,29 @@ const TeamSnapshot = ({
 
       const numTop2 = teamData.num_top_2;
       if (numTop2) {
-        dataPoints.push(getDataPoint('Top 2 finishes', numTop2, 'num_top_2'));
+        dataPoints.push(
+          getDataPoint('1st or 2nd Place Finishes', numTop2, 'num_top_2')
+        );
+      }
+
+      const numTop4 = teamData.num_top_4;
+      if (numTop4) {
+        dataPoints.push(
+          getDataPoint('3rd or 4th Place Finishes', numTop4, 'num_top_4')
+        );
+      }
+
+      const numTop6 = teamData.num_top_6;
+      if (numTop6) {
+        dataPoints.push(
+          getDataPoint(
+            '5th or 6th Place Finishes',
+            numTop6,
+            'num_top_6',
+            '',
+            true
+          )
+        );
       }
 
       const numBigGames = teamData.num_big_games;
@@ -326,6 +348,7 @@ const TeamSnapshot = ({
         );
       }
 
+      /**
       const topPlayerShare = teamData.top_player_share;
       if (topPlayerShare) {
         const dataExplanation = getInformationalPopover(
@@ -363,6 +386,45 @@ const TeamSnapshot = ({
           )
         );
       }
+      */
+
+      const numBooms = teamData.num_booms;
+      if (numBooms) {
+        const dataExplanation = getInformationalPopover(
+          'What is this?',
+          'Cheap Explosions',
+          'Players who cost < 5k who scored at least 20 points'
+        );
+        dataPoints.push(
+          getDataPoint(
+            'Cheap Explosions',
+            numBooms,
+            'num_booms',
+            '',
+            false,
+            dataExplanation
+          )
+        );
+      }
+
+      const numBusts = teamData.num_busts;
+      if (numBusts) {
+        const dataExplanation = getInformationalPopover(
+          'What is this?',
+          'Expensive Busts',
+          'Players who cost >= 6k who scored single-digit points'
+        );
+        dataPoints.push(
+          getDataPoint(
+            'Expensive Busts',
+            numBusts,
+            'num_busts',
+            '',
+            true,
+            dataExplanation
+          )
+        );
+      }
 
       const consistency = teamData.std_dev;
       if (consistency) {
@@ -378,6 +440,25 @@ const TeamSnapshot = ({
             'std_dev',
             '',
             true,
+            dataExplanation
+          )
+        );
+      }
+
+      const numUniquePlays = teamData.num_unique_plays;
+      if (consistency) {
+        const dataExplanation = getInformationalPopover(
+          'What is this?',
+          'Unique Plays',
+          'Numbers of times where this team was the only team to play a player in a given week'
+        );
+        dataPoints.push(
+          getDataPoint(
+            'Unique Plays',
+            numUniquePlays,
+            'num_unique_plays',
+            '',
+            false,
             dataExplanation
           )
         );
